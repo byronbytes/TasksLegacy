@@ -33,8 +33,8 @@ namespace Tasks
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.taskDialog1 = new Ookii.Dialogs.WinForms.TaskDialog(this.components);
@@ -44,11 +44,11 @@ namespace Tasks
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox4);
             this.groupBox1.Controls.Add(this.checkBox3);
+            this.groupBox1.Controls.Add(this.checkBox4);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 4);
             this.groupBox1.Name = "groupBox1";
@@ -79,27 +79,27 @@ namespace Tasks
             this.checkBox2.Text = "Clear Downloads";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
-            this.checkBox4.Location = new System.Drawing.Point(6, 110);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(144, 23);
-            this.checkBox4.TabIndex = 10;
-            this.checkBox4.Text = "Clear Temp Folders";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
-            this.checkBox3.Location = new System.Drawing.Point(6, 81);
+            this.checkBox3.Location = new System.Drawing.Point(6, 82);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(112, 23);
-            this.checkBox3.TabIndex = 11;
-            this.checkBox3.Text = "Clear Prefetch";
+            this.checkBox3.Size = new System.Drawing.Size(144, 23);
+            this.checkBox3.TabIndex = 10;
+            this.checkBox3.Text = "Clear Temp Folders";
             this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
+            this.checkBox4.Location = new System.Drawing.Point(6, 111);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(112, 23);
+            this.checkBox4.TabIndex = 11;
+            this.checkBox4.Text = "Clear Prefetch";
+            this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -115,8 +115,9 @@ namespace Tasks
             // 
             // listBox1
             // 
+            this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.listBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.listBox1.ForeColor = System.Drawing.Color.White;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
             this.listBox1.Items.AddRange(new object[] {
@@ -143,7 +144,7 @@ namespace Tasks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(561, 402);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button1);
@@ -163,8 +164,8 @@ namespace Tasks
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox4;
         private Ookii.Dialogs.WinForms.TaskDialog taskDialog1;
         private Ookii.Dialogs.WinForms.TaskDialogButton taskDialogButton1;
     }
