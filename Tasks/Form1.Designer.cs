@@ -29,7 +29,6 @@ namespace Tasks
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -43,7 +42,7 @@ namespace Tasks
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.taskDialog1 = new Ookii.Dialogs.WinForms.TaskDialog(this.components);
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -117,6 +116,7 @@ namespace Tasks
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(137, 12);
@@ -189,9 +189,16 @@ namespace Tasks
             this.label4.TabIndex = 3;
             this.label4.Text = "You can view, add, and remove programs that run \r\non start.";
             // 
-            // taskDialog1
+            // label6
             // 
-            this.taskDialog1.MainInstruction = "taskDialog1";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semilight", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label6.Location = new System.Drawing.Point(156, 34);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(145, 23);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Currently Working";
             // 
             // Form1
             // 
@@ -233,7 +240,7 @@ namespace Tasks
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private Ookii.Dialogs.WinForms.TaskDialog taskDialog1;
+        private System.Windows.Forms.Label label6;
     }
 }
 

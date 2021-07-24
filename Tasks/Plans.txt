@@ -1,3 +1,5 @@
 ﻿7/23/21 - Start basic progress on the app such as one of the three planned features. 
 Focus more on the features, not on the details.
 Also gotta learn c#
+
+7/24 - Got more progress on Cleanup
