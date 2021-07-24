@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Windows;
 namespace Tasks
 {
     public partial class frmCleanup : Form
@@ -52,8 +52,25 @@ namespace Tasks
 
             if (checkBox2.Checked == true)
             {
-                listBox1.Items.Add("Feature coming soon.");
+                try { 
+
+                string dir = new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)) + "\\Downloads";
+                foreach (var file in Directory.GetFiles(dir.ToString()))
+                {
+                    File.Delete(file);
+                    listBox1.Items.Add("Deleted " + file);
+                }
+                listBox1.Items.Add("Downloads Folder Cleaned.");
             }
+                catch (IOException Ex)
+            {
+
+                Console.WriteLine(
+                    "Unable to delete this file, it is currently in use by the system." +
+                    Ex.GetType().Name);
+            }
+
+
 
             if (checkBox3.Checked == true)
             {
@@ -69,17 +86,58 @@ namespace Tasks
                 }
                 catch (IOException Ex)
                 {
+
                     Console.WriteLine(
                         "Unable to delete this file, it is currently in use by the system." +
                         Ex.GetType().Name);
                 }
 
-              
+
+                try
+                {
+                    var dir2 = new DirectoryInfo(Path.GetTempPath());
+                    foreach (var file2 in Directory.GetFiles(dir2.ToString()))
+                    {
+                        File.Delete(file2);
+                        listBox1.Items.Add("Deleted " + file2);
+                    }
+                }
+                catch (IOException Ex)
+                {
+
+                    Console.WriteLine(
+                        "Unable to delete this file, it is currently in use by the system." +
+                        Ex.GetType().Name);
+                }
+
 
             }
-        }
 
-        
+            if (checkBox4.Checked == true)
+            {
+                try
+                {
+                    var dir = new DirectoryInfo("C:\\Windows\\Prefetch");
+                    foreach (var file in Directory.GetFiles(dir.ToString()))
+                    {
+                        File.Delete(file);
+                        listBox1.Items.Add("Deleted " + file);
+                    }
+                    listBox1.Items.Add("Prefetch Cleaned.");
+                }
+                catch (IOException Ex)
+                {
+
+                    Console.WriteLine(
+                        "Unable to delete this file, it is currently in use by the system." +
+                        Ex.GetType().Name);
+                }
+
+            }
+
+
+        }
+    }
     }
 
 }
