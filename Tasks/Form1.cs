@@ -16,5 +16,16 @@ namespace Tasks
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmCleanup Cleanup = new frmCleanup(); // Initialize cleanup form.
+            Cleanup.Show(); // Show Form
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        
+        }
     }
 }
