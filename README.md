@@ -1,6 +1,6 @@
 # 😎Tasks
 
-Tasks is an application to help your computer do certain tasks.
+Tasks is an application to help your computer overall. It is designed to help make your computer run faster and more efficiently.
 
 
 # ✅Features
