@@ -51,6 +51,8 @@ namespace Tasks
             this.label6 = new System.Windows.Forms.Label();
             this.taskDialog1 = new Ookii.Dialogs.WinForms.TaskDialog(this.components);
             this.taskDialogButton1 = new Ookii.Dialogs.WinForms.TaskDialogButton(this.components);
+            this.taskDialog2 = new Ookii.Dialogs.WinForms.TaskDialog(this.components);
+            this.taskDialogButton2 = new Ookii.Dialogs.WinForms.TaskDialogButton(this.components);
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -88,7 +90,7 @@ namespace Tasks
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel2.LinkColor = System.Drawing.SystemColors.ActiveCaption;
-            this.linkLabel2.Location = new System.Drawing.Point(12, 96);
+            this.linkLabel2.Location = new System.Drawing.Point(11, 89);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(100, 20);
             this.linkLabel2.TabIndex = 11;
@@ -109,11 +111,11 @@ namespace Tasks
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(3, 481);
+            this.button4.Location = new System.Drawing.Point(0, 501);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(125, 26);
+            this.button4.Size = new System.Drawing.Size(131, 26);
             this.button4.TabIndex = 9;
             this.button4.Text = "Changelog";
             this.button4.UseVisualStyleBackColor = true;
@@ -124,7 +126,7 @@ namespace Tasks
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semilight", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label5.Location = new System.Drawing.Point(91, 530);
+            this.label5.Location = new System.Drawing.Point(94, 530);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 23);
             this.label5.TabIndex = 8;
@@ -135,12 +137,13 @@ namespace Tasks
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.SystemColors.ActiveCaption;
-            this.linkLabel1.Location = new System.Drawing.Point(12, 59);
+            this.linkLabel1.Location = new System.Drawing.Point(11, 52);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(54, 20);
+            this.linkLabel1.Size = new System.Drawing.Size(93, 20);
             this.linkLabel1.TabIndex = 7;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "GitHub";
+            this.linkLabel1.Text = "GitHub Repo";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // button1
             // 
@@ -226,7 +229,7 @@ namespace Tasks
             this.groupBox3.Size = new System.Drawing.Size(314, 119);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Programs that run on Startup";
+            this.groupBox3.Text = "startup programs ";
             // 
             // button3
             // 
@@ -236,7 +239,7 @@ namespace Tasks
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(141, 40);
             this.button3.TabIndex = 2;
-            this.button3.Text = "Startup Services";
+            this.button3.Text = "Startup Programs";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -304,12 +307,27 @@ namespace Tasks
             // 
             this.taskDialogButton1.Text = "Report";
             // 
+            // taskDialog2
+            // 
+            this.taskDialog2.Buttons.Add(this.taskDialogButton2);
+            this.taskDialog2.ButtonStyle = Ookii.Dialogs.WinForms.TaskDialogButtonStyle.CommandLinks;
+            this.taskDialog2.Content = "Click to go to our GitHub Repository!";
+            this.taskDialog2.ExpandedByDefault = true;
+            this.taskDialog2.MainIcon = Ookii.Dialogs.WinForms.TaskDialogIcon.Shield;
+            this.taskDialog2.MainInstruction = "GitHub Repo";
+            this.taskDialog2.WindowTitle = "Tasks";
+            this.taskDialog2.ButtonClicked += new System.EventHandler<Ookii.Dialogs.WinForms.TaskDialogItemClickedEventArgs>(this.taskDialog2_ButtonClicked);
+            // 
+            // taskDialogButton2
+            // 
+            this.taskDialogButton2.Text = "Go";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(755, 552);
+            this.ClientSize = new System.Drawing.Size(703, 552);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -355,6 +373,8 @@ namespace Tasks
         private System.Windows.Forms.Label label7;
         private Ookii.Dialogs.WinForms.TaskDialog taskDialog1;
         private Ookii.Dialogs.WinForms.TaskDialogButton taskDialogButton1;
+        private Ookii.Dialogs.WinForms.TaskDialog taskDialog2;
+        private Ookii.Dialogs.WinForms.TaskDialogButton taskDialogButton2;
     }
 }
 

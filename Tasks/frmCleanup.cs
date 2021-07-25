@@ -68,7 +68,7 @@ namespace Tasks
                 {
 
                     Console.WriteLine(
-                        "Unable to delete this file, it is currently in use by the system. Exception Error: " +
+                        "Unable to delete this file, it is currently in use by the system. Exception: " +
                         Ex.GetType().Name);
                 }
 
@@ -92,7 +92,7 @@ namespace Tasks
                     {
 
                         listBox1.Items.Add(
-                            "Unable to delete this file, it is currently in use by the system. Exception Error: " +
+                            "Unable to delete this file, it is currently in use by the system. Exception: " +
                             Ex.GetType().Name);
                     }
 
@@ -109,7 +109,7 @@ namespace Tasks
                     {
 
                         listBox1.Items.Add(
-                            "Unable to delete this file, it is currently in use by the system. Exception Error: " +
+                            "Unable to delete this file, it is currently in use by the system. Exception: " +
                             Ex.GetType().Name);
                     }
 
@@ -134,7 +134,7 @@ namespace Tasks
                 {
 
                     Console.WriteLine(
-                        "Unable to delete this file, it is currently in use by the system. Exception Error: " +
+                        "Unable to delete this file, it is currently in use by the system. Exception: " +
                         Ex.GetType().Name);
                 }
 
@@ -142,7 +142,7 @@ namespace Tasks
                 {
 
                     listBox1.Items.Add(
-                        "Unable to delete this file, you are not allowed to delete this file. Exception Error: " +
+                        "Unable to delete this file, you are not allowed to delete this file. Exception: " +
                         Ex.GetType().Name);
                 }
 
@@ -151,8 +151,7 @@ namespace Tasks
             }
         }
 
-
-        }
+    }
     }
     
 
