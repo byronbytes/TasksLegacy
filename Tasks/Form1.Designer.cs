@@ -34,6 +34,7 @@ namespace Tasks
             this.panel1 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.label7 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
@@ -48,7 +49,6 @@ namespace Tasks
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button5 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -69,6 +69,8 @@ namespace Tasks
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.linkLabel2);
@@ -83,6 +85,7 @@ namespace Tasks
             // 
             // button6
             // 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button6.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.Location = new System.Drawing.Point(0, 501);
@@ -105,8 +108,20 @@ namespace Tasks
             this.linkLabel2.Text = "Found A Bug?";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semilight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Gray;
+            this.label7.Location = new System.Drawing.Point(70, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(63, 30);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "v1.2.0";
+            // 
             // button4
             // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button4.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.Location = new System.Drawing.Point(0, 446);
@@ -156,6 +171,8 @@ namespace Tasks
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -169,6 +186,8 @@ namespace Tasks
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -206,6 +225,8 @@ namespace Tasks
             // 
             // groupBox3
             // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox3.Controls.Add(this.button3);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -242,6 +263,8 @@ namespace Tasks
             // 
             // groupBox4
             // 
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox4.Controls.Add(this.button5);
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -275,17 +298,6 @@ namespace Tasks
             this.label6.TabIndex = 3;
             this.label6.Text = "A more improved and efficient task manager. This\r\nwill include basic task manager" +
     " features and \r\nmore.\r\n";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semilight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(70, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(63, 30);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "v1.2.0";
             // 
             // Form1
             // 
