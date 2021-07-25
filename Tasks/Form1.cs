@@ -54,6 +54,7 @@ namespace Tasks
 
         private void taskDialog2_ButtonClicked(object sender, Ookii.Dialogs.WinForms.TaskDialogItemClickedEventArgs e)
         {
+      
             Process.Start("https://github.com/byronbytes/Tasks");
         }
 
