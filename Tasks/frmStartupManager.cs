@@ -32,5 +32,10 @@ namespace Tasks
                 listView1.Items.Add(strt["Name"].ToString(), 0);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            vistaOpenFileDialog1.ShowDialog();
+        }
     }
 }

@@ -38,6 +38,7 @@ namespace Tasks
             this.viewFolderLocationWIPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.vistaOpenFileDialog1 = new Ookii.Dialogs.WinForms.VistaOpenFileDialog();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +69,7 @@ namespace Tasks
             this.button1.TabIndex = 2;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // contextMenuStrip1
             // 
@@ -104,11 +106,17 @@ namespace Tasks
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(259, 357);
+            this.label1.Location = new System.Drawing.Point(270, 360);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(304, 37);
             this.label1.TabIndex = 6;
             this.label1.Text = "DRAFT / NOT WORKING";
+            // 
+            // vistaOpenFileDialog1
+            // 
+            this.vistaOpenFileDialog1.FileName = "vistaOpenFileDialog1";
+            this.vistaOpenFileDialog1.Filter = null;
+            this.vistaOpenFileDialog1.Title = "Please select a file to add on Startup.";
             // 
             // frmStartupManager
             // 
@@ -139,5 +147,6 @@ namespace Tasks
         private System.Windows.Forms.ToolStripMenuItem viewFolderLocationWIPToolStripMenuItem;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;
+        private Ookii.Dialogs.WinForms.VistaOpenFileDialog vistaOpenFileDialog1;
     }
 }
