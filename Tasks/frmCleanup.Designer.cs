@@ -53,7 +53,7 @@ namespace Tasks
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox1.Location = new System.Drawing.Point(12, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(336, 140);
+            this.groupBox1.Size = new System.Drawing.Size(378, 140);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cleanup Settings";
@@ -117,15 +117,18 @@ namespace Tasks
             // listBox1
             // 
             this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.listBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.listBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.listBox1.ForeColor = System.Drawing.Color.White;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 15;
+            this.listBox1.HorizontalScrollbar = true;
+            this.listBox1.ItemHeight = 17;
             this.listBox1.Items.AddRange(new object[] {
             "Deletion Logs:"});
             this.listBox1.Location = new System.Drawing.Point(12, 150);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(336, 214);
+            this.listBox1.Size = new System.Drawing.Size(378, 206);
             this.listBox1.TabIndex = 7;
             // 
             // taskDialog1

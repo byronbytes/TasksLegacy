@@ -48,69 +48,73 @@ namespace Tasks
                 SHEmptyRecycleBin(IntPtr.Zero, null, RecycleFlag.SHERB_NOSOUND | RecycleFlag.SHERB_NOCONFIRMATION);
                 listBox1.Items.Add("Recycle Bin Cleaned.");
 
+
             }
 
             if (checkBox2.Checked == true)
             {
-                try { 
-
-                string dir = new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)) + "\\Downloads";
-                foreach (var file in Directory.GetFiles(dir.ToString()))
-                {
-                    File.Delete(file);
-                    listBox1.Items.Add("Deleted " + file);
-                }
-                listBox1.Items.Add("Downloads Folder Cleaned.");
-            }
-                catch (IOException Ex)
-            {
-
-                Console.WriteLine(
-                    "Unable to delete this file, it is currently in use by the system." +
-                    Ex.GetType().Name);
-            }
-
-
-
-            if (checkBox3.Checked == true)
-            {
                 try
                 {
-                    var dir = new DirectoryInfo("C:\\Windows\\Temp");
+
+                    string dir = new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)) + "\\Downloads";
                     foreach (var file in Directory.GetFiles(dir.ToString()))
                     {
                         File.Delete(file);
                         listBox1.Items.Add("Deleted " + file);
                     }
-                    listBox1.Items.Add("Temp Files Cleaned.");
+                    listBox1.Items.Add("Downloads Folder Cleaned.");
                 }
                 catch (IOException Ex)
                 {
 
                     Console.WriteLine(
-                        "Unable to delete this file, it is currently in use by the system." +
+                        "Unable to delete this file, it is currently in use by the system. Exception Error: " +
                         Ex.GetType().Name);
                 }
 
 
-                try
+
+                if (checkBox3.Checked == true)
                 {
-                    var dir2 = new DirectoryInfo(Path.GetTempPath());
-                    foreach (var file2 in Directory.GetFiles(dir2.ToString()))
+                    try
                     {
-                        File.Delete(file2);
-                        listBox1.Items.Add("Deleted " + file2);
+                        var dir = new DirectoryInfo("C:\\Windows\\Temp");
+                        foreach (var file in Directory.GetFiles(dir.ToString()))
+                        {
+                            File.Delete(file);
+                            listBox1.Items.Add("Deleted " + file);
+                        }
+                        listBox1.Items.Add("Temp Files Cleaned.");
                     }
+
+
+                    catch (IOException Ex)
+                    {
+
+                        listBox1.Items.Add(
+                            "Unable to delete this file, it is currently in use by the system. Exception Error: " +
+                            Ex.GetType().Name);
+                    }
+
+                    try
+                    {
+                        var dir2 = new DirectoryInfo(Path.GetTempPath());
+                        foreach (var file2 in Directory.GetFiles(dir2.ToString()))
+                        {
+                            File.Delete(file2);
+                            listBox1.Items.Add("Deleted " + file2);
+                        }
+                    }
+                    catch (IOException Ex)
+                    {
+
+                        listBox1.Items.Add(
+                            "Unable to delete this file, it is currently in use by the system. Exception Error: " +
+                            Ex.GetType().Name);
+                    }
+
+
                 }
-                catch (IOException Ex)
-                {
-
-                    Console.WriteLine(
-                        "Unable to delete this file, it is currently in use by the system." +
-                        Ex.GetType().Name);
-                }
-
-
             }
 
             if (checkBox4.Checked == true)
@@ -124,20 +128,31 @@ namespace Tasks
                         listBox1.Items.Add("Deleted " + file);
                     }
                     listBox1.Items.Add("Prefetch Cleaned.");
+
                 }
                 catch (IOException Ex)
                 {
 
                     Console.WriteLine(
-                        "Unable to delete this file, it is currently in use by the system." +
+                        "Unable to delete this file, it is currently in use by the system. Exception Error: " +
                         Ex.GetType().Name);
                 }
 
+                catch (System.UnauthorizedAccessException Ex)
+                {
+
+                    listBox1.Items.Add(
+                        "Unable to delete this file, you are not allowed to delete this file. Exception Error: " +
+                        Ex.GetType().Name);
+                }
+
+
+               
             }
+        }
 
 
         }
     }
-    }
+    
 
-}
