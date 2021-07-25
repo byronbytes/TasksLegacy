@@ -24,9 +24,7 @@ namespace Tasks
             Cleanup.Show(); // Show Form
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-        }
+
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -36,7 +34,7 @@ namespace Tasks
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            taskDialog1.Show();
+            Process.Start("https://github.com/byronbytes/Tasks/issues/new?assignees=byronbytes&labels=bug&template=bug-report.md&title=");
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -45,22 +43,10 @@ namespace Tasks
             Changelog.Show(); // Show Form
         }
 
-        private void taskDialog1_ButtonClicked(object sender, Ookii.Dialogs.WinForms.TaskDialogItemClickedEventArgs e)
-        {
-            Process.Start("https://github.com/byronbytes/Tasks/issues/new?assignees=byronbytes&labels=bug&template=bug-report.md&title=");
-        }
-
-
-
-        private void taskDialog2_ButtonClicked(object sender, Ookii.Dialogs.WinForms.TaskDialogItemClickedEventArgs e)
-        {
-      
-            Process.Start("https://github.com/byronbytes/Tasks");
-        }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            taskDialog2.Show();
+            Process.Start("https://github.com/byronbytes/Tasks");
         }
 
         private void button2_Click(object sender, EventArgs e)

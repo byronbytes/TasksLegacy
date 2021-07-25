@@ -29,7 +29,6 @@ namespace Tasks
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -49,12 +48,6 @@ namespace Tasks
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button5 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.taskDialog1 = new Ookii.Dialogs.WinForms.TaskDialog(this.components);
-            this.taskDialogButton1 = new Ookii.Dialogs.WinForms.TaskDialogButton(this.components);
-            this.taskDialogButton4 = new Ookii.Dialogs.WinForms.TaskDialogButton(this.components);
-            this.taskDialog2 = new Ookii.Dialogs.WinForms.TaskDialog(this.components);
-            this.taskDialogButton2 = new Ookii.Dialogs.WinForms.TaskDialogButton(this.components);
-            this.taskDialogButton3 = new Ookii.Dialogs.WinForms.TaskDialogButton(this.components);
             this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -104,7 +97,7 @@ namespace Tasks
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel2.LinkColor = System.Drawing.SystemColors.ActiveCaption;
-            this.linkLabel2.Location = new System.Drawing.Point(10, 92);
+            this.linkLabel2.Location = new System.Drawing.Point(11, 92);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(100, 20);
             this.linkLabel2.TabIndex = 11;
@@ -283,48 +276,6 @@ namespace Tasks
             this.label6.Text = "A more improved and efficient task manager. This\r\nwill include basic task manager" +
     " features and \r\nmore.\r\n";
             // 
-            // taskDialog1
-            // 
-            this.taskDialog1.Buttons.Add(this.taskDialogButton1);
-            this.taskDialog1.Buttons.Add(this.taskDialogButton4);
-            this.taskDialog1.ButtonStyle = Ookii.Dialogs.WinForms.TaskDialogButtonStyle.CommandLinks;
-            this.taskDialog1.Content = "You can report bugs on our GitHub page, you can also put ideas, suggestions, and " +
-    "improvements too. ";
-            this.taskDialog1.ExpandedByDefault = true;
-            this.taskDialog1.Footer = "Tasks is still in beta, so there will be bugs, which is why you can report them t" +
-    "o help stabilize our app.\r\n";
-            this.taskDialog1.MainIcon = Ookii.Dialogs.WinForms.TaskDialogIcon.Shield;
-            this.taskDialog1.MainInstruction = "Found a bug?";
-            this.taskDialog1.WindowTitle = "Tasks";
-            this.taskDialog1.ButtonClicked += new System.EventHandler<Ookii.Dialogs.WinForms.TaskDialogItemClickedEventArgs>(this.taskDialog1_ButtonClicked);
-            // 
-            // taskDialogButton1
-            // 
-            this.taskDialogButton1.Text = "Report";
-            // 
-            // taskDialogButton4
-            // 
-            this.taskDialogButton4.Text = "Close";
-            // 
-            // taskDialog2
-            // 
-            this.taskDialog2.Buttons.Add(this.taskDialogButton2);
-            this.taskDialog2.Buttons.Add(this.taskDialogButton3);
-            this.taskDialog2.ButtonStyle = Ookii.Dialogs.WinForms.TaskDialogButtonStyle.CommandLinks;
-            this.taskDialog2.Content = "Click to go to our GitHub Repository!";
-            this.taskDialog2.ExpandedByDefault = true;
-            this.taskDialog2.MainInstruction = "GitHub Repo";
-            this.taskDialog2.WindowTitle = "Tasks";
-            this.taskDialog2.ButtonClicked += new System.EventHandler<Ookii.Dialogs.WinForms.TaskDialogItemClickedEventArgs>(this.taskDialog2_ButtonClicked);
-            // 
-            // taskDialogButton2
-            // 
-            this.taskDialogButton2.Text = "Go";
-            // 
-            // taskDialogButton3
-            // 
-            this.taskDialogButton3.Text = "Close";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -334,7 +285,7 @@ namespace Tasks
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 30);
             this.label7.TabIndex = 10;
-            this.label7.Text = "v1.0.2";
+            this.label7.Text = "v1.2.0";
             // 
             // Form1
             // 
@@ -350,7 +301,6 @@ namespace Tasks
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = " Tasks";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -384,13 +334,7 @@ namespace Tasks
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.LinkLabel linkLabel2;
-        private Ookii.Dialogs.WinForms.TaskDialog taskDialog1;
-        private Ookii.Dialogs.WinForms.TaskDialogButton taskDialogButton1;
-        private Ookii.Dialogs.WinForms.TaskDialog taskDialog2;
-        private Ookii.Dialogs.WinForms.TaskDialogButton taskDialogButton2;
         private System.Windows.Forms.Button button6;
-        private Ookii.Dialogs.WinForms.TaskDialogButton taskDialogButton4;
-        private Ookii.Dialogs.WinForms.TaskDialogButton taskDialogButton3;
         private System.Windows.Forms.Label label7;
     }
 }

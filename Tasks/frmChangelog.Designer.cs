@@ -44,7 +44,7 @@ namespace Tasks
             this.groupBox1.Size = new System.Drawing.Size(600, 400);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Changelog for v0.1";
+            this.groupBox1.Text = "Changelog for v1.2.0";
             // 
             // label2
             // 
