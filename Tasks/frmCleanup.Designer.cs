@@ -90,6 +90,7 @@ namespace Tasks
             this.checkBox3.TabIndex = 10;
             this.checkBox3.Text = "Clear Temp Folders";
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // checkBox4
             // 

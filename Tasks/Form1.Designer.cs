@@ -53,6 +53,7 @@ namespace Tasks
             this.taskDialogButton1 = new Ookii.Dialogs.WinForms.TaskDialogButton(this.components);
             this.taskDialog2 = new Ookii.Dialogs.WinForms.TaskDialog(this.components);
             this.taskDialogButton2 = new Ookii.Dialogs.WinForms.TaskDialogButton(this.components);
+            this.inputDialog1 = new Ookii.Dialogs.WinForms.InputDialog(this.components);
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -113,9 +114,9 @@ namespace Tasks
             // 
             this.button4.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 501);
+            this.button4.Location = new System.Drawing.Point(0, 496);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(131, 26);
+            this.button4.Size = new System.Drawing.Size(131, 31);
             this.button4.TabIndex = 9;
             this.button4.Text = "Changelog";
             this.button4.UseVisualStyleBackColor = true;
@@ -137,7 +138,7 @@ namespace Tasks
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.SystemColors.ActiveCaption;
-            this.linkLabel1.Location = new System.Drawing.Point(11, 52);
+            this.linkLabel1.Location = new System.Drawing.Point(12, 52);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(93, 20);
             this.linkLabel1.TabIndex = 7;
@@ -205,6 +206,7 @@ namespace Tasks
             this.button2.TabIndex = 2;
             this.button2.Text = "Remove Bloat";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 
@@ -229,7 +231,7 @@ namespace Tasks
             this.groupBox3.Size = new System.Drawing.Size(314, 119);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "startup programs ";
+            this.groupBox3.Text = "Startup Programs";
             // 
             // button3
             // 
@@ -285,9 +287,10 @@ namespace Tasks
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(6, 62);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(256, 17);
+            this.label6.Size = new System.Drawing.Size(282, 51);
             this.label6.TabIndex = 3;
-            this.label6.Text = "A more improved and efficient task manager.";
+            this.label6.Text = "A more improved and efficient task manager. This\r\nwill include basic task manager" +
+    " features and \r\nmore.\r\n";
             // 
             // taskDialog1
             // 
@@ -321,6 +324,13 @@ namespace Tasks
             // taskDialogButton2
             // 
             this.taskDialogButton2.Text = "Go";
+            // 
+            // inputDialog1
+            // 
+            this.inputDialog1.Content = "dgasdfg";
+            this.inputDialog1.Input = "gfdsgfad";
+            this.inputDialog1.MainInstruction = "inputDialog1";
+            this.inputDialog1.WindowTitle = "Kwty";
             // 
             // Form1
             // 
@@ -375,6 +385,7 @@ namespace Tasks
         private Ookii.Dialogs.WinForms.TaskDialogButton taskDialogButton1;
         private Ookii.Dialogs.WinForms.TaskDialog taskDialog2;
         private Ookii.Dialogs.WinForms.TaskDialogButton taskDialogButton2;
+        private Ookii.Dialogs.WinForms.InputDialog inputDialog1;
     }
 }
 
