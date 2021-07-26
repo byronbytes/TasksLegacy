@@ -40,6 +40,7 @@ namespace Tasks
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.taskDialog1 = new Ookii.Dialogs.WinForms.TaskDialog(this.components);
             this.taskDialogButton1 = new Ookii.Dialogs.WinForms.TaskDialogButton(this.components);
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -127,7 +128,7 @@ namespace Tasks
             this.listBox1.HorizontalScrollbar = true;
             this.listBox1.ItemHeight = 17;
             this.listBox1.Items.AddRange(new object[] {
-            "Deletion Logs:"});
+            "Cleanup Logs:"});
             this.listBox1.Location = new System.Drawing.Point(12, 150);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(378, 240);
@@ -146,12 +147,25 @@ namespace Tasks
             // 
             this.taskDialogButton1.Text = "Okay";
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(419, 298);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(130, 50);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Copy Cleanup Logs";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // frmCleanup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(561, 402);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
@@ -175,5 +189,6 @@ namespace Tasks
         private System.Windows.Forms.CheckBox checkBox4;
         private Ookii.Dialogs.WinForms.TaskDialog taskDialog1;
         private Ookii.Dialogs.WinForms.TaskDialogButton taskDialogButton1;
+        private System.Windows.Forms.Button button2;
     }
 }
