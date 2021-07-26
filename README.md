@@ -1,33 +1,31 @@
 # 😎Tasks
 
-Tasks helps your computer run faster by operating cleaning tasks.
+Tasks helps your computer run faster by allowing you to clean trashes, remove bloatware as well as control startup programs and an advanced task manager, allowing you to check if any apps are maliciously eating your computer CPU and RAM without you knowing in the background.
 
 
 # ✅Features
 
-- Cleanup Folders such as Prefetch, Downloads, both Temp folders, and empty your Recycle Bin
-- View, add, and delete processes that run on start
-- An advanced task manager 
-- Remove bloatware from your computer
+- Cleanup Folders such as Prefetch, Downloads, Temp and empty your Recycle Bin easily.
+- Allow and disallow processes that run on start.
+- An advanced task manager that gives you more information than the old Windows `taskmgr`.
+- Remove bloatware from your computer on a click of a button.
 - Discord RPC included!
 
 # 🦺Prerequisites
 
-You will need the following items
+To be able to run Tasks, you will need:
+- [Microsoft .NET Framework 3.0](https://www.microsoft.com/en-us/download/details.aspx?id=3005) or higher
 
-- .NET 3.0 or higher
-- IDK please fork and tell me 
 
 # 🎁Setup
 
-What you want to do is download the most latest version from the Releases tab and unzip it. It should completely work on unzipping and opening the .exe file.
-
+Tasks is a portable program (for now). You can head to the Releases page, choose the latest version, download the zip file (**Note**: Not the Source Code zip file). Extract the zip file, and execute the *.exe* file in the extracted files. You can now experience the program!
 
 
 # 📐Branch Information
 
-The **master** branch is meant for final commits to the project, and is the most stable compared to other branches.
+The **master** branch holds the most stable updates for the project, and if you are not looking to the experimental side, or just want to simply use Tasks, then feel free to visit the **master** branch for source code.
 
-The **testing** branch is meant for testing features on the project, it is not as stable as master since new features get added early, but it functions similarly.
+The **testing** branch is meant for testing features on the project, and it is not as stable as master. New stuff get added to this branch, but they will not be quite stable and may either work as intended or not.
 
-The **final** branch is meant for completely new features on the project, not even tested yet. It is not fully stable, and is coming soon.
+The **final** branch is meant for completely new features on the project and not even tested yet. It is not fully stable, and will come to the master branch soon.
