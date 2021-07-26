@@ -40,14 +40,11 @@ namespace Tasks
                 taskDialog1.Show();
                 listBox1.Items.Add("Error: Did not select anything to clean.");
             }
-
-
             if (checkBox1.Checked == true)
             {
                 SHEmptyRecycleBin(IntPtr.Zero, null, RecycleFlag.SHERB_NOSOUND | RecycleFlag.SHERB_NOCONFIRMATION);
                 listBox1.Items.Add("Recycle Bin Cleaned.");
             }
-
             if (checkBox2.Checked == true)
             {
                 try
@@ -64,14 +61,12 @@ namespace Tasks
                 catch (IOException Ex)
                 {
 
-                    Console.WriteLine(
-                        "Unable to delete this file, it is currently in use by the system. Exception: " +
-                        Ex.GetType().Name);
+                    listBox1.Items.Add("Unable to delete this file, it is currently in use by the system. Exception: " + Ex.GetType().Name);
                 }
             }
 
 
-                if (checkBox3.Checked == true)
+            if (checkBox3.Checked == true)
                 {
                     try
                     {
@@ -86,9 +81,7 @@ namespace Tasks
                     catch (IOException Ex)
                     {
 
-                        listBox1.Items.Add(
-                            "Unable to delete this file, it is currently in use by the system. Exception: " +
-                            Ex.GetType().Name);
+                        listBox1.Items.Add("Unable to delete this file, it is currently in use by the system. Exception: " + Ex.GetType().Name);
                     }
 
                     try
@@ -100,17 +93,19 @@ namespace Tasks
                             listBox1.Items.Add("Deleted " + file2);
                         }
                     listBox1.Items.Add("AppData Temp Folder Cleaned.");
-
-                }
-                    catch (IOException Ex)
+                      }
+                catch (IOException Ex)
                     {
 
-                        listBox1.Items.Add(
-                            "Unable to delete this file, it is currently in use by the system. Exception: " +
-                            Ex.GetType().Name);
+                        listBox1.Items.Add("Unable to delete this file, it is currently in use by the system. Exception: " + Ex.GetType().Name);
                     }
                 }
-            
+              catch (UnauthorizedAccessException Ex)
+            {
+
+                listBox1.Items.Add("Unable to delete this file, you do not have the right permissions to delete this file. Exception: " + Ex.GetType().Name);
+            }
+
 
             if (checkBox4.Checked == true)
             {
@@ -128,17 +123,13 @@ namespace Tasks
                 catch (IOException Ex)
                 {
 
-                    Console.WriteLine(
-                        "Unable to delete this file, it is currently in use by the system. Exception: " +
-                        Ex.GetType().Name);
+                    listBox1.Items.Add("Unable to delete this file, it is currently in use by the system. Exception: " + Ex.GetType().Name);
                 }
 
-                catch (System.UnauthorizedAccessException Ex)
+                catch (UnauthorizedAccessException Ex)
                 {
 
-                    listBox1.Items.Add(
-                        "Unable to delete this file, you are not allowed to delete this file. Exception: " +
-                        Ex.GetType().Name);
+                    listBox1.Items.Add("Unable to delete this file, you do not have the right permissions to delete this file. Exception: " + Ex.GetType().Name);
                 }
 
 
@@ -146,10 +137,7 @@ namespace Tasks
             }
         }
 
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
+   
 
         private void button2_Click(object sender, EventArgs e)
         {

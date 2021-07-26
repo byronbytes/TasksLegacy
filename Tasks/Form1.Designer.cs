@@ -51,6 +51,7 @@ namespace Tasks
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -306,12 +307,13 @@ namespace Tasks
             // 
             this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox5.Controls.Add(this.label8);
             this.groupBox5.Controls.Add(this.label5);
             this.groupBox5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.ForeColor = System.Drawing.Color.White;
             this.groupBox5.Location = new System.Drawing.Point(459, 12);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(336, 184);
+            this.groupBox5.Size = new System.Drawing.Size(336, 244);
             this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "PC Info";
@@ -319,11 +321,22 @@ namespace Tasks
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.label5.Location = new System.Drawing.Point(6, 19);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 15);
+            this.label5.Size = new System.Drawing.Size(173, 20);
             this.label5.TabIndex = 8;
             this.label5.Text = "Operating System: %os%";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label8.Location = new System.Drawing.Point(6, 50);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(173, 20);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "Operating System: %os%";
             // 
             // Form1
             // 
@@ -379,6 +392,7 @@ namespace Tasks
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label8;
     }
 }
 
