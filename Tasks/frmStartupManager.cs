@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Management;
 using System.Text;
@@ -36,6 +38,21 @@ namespace Tasks
         private void button1_Click(object sender, EventArgs e)
         {
             vistaOpenFileDialog1.ShowDialog();
+        }
+
+        private void vistaOpenFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+            string fileName = vistaOpenFileDialog1.FileName;
+            string targetPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) +"\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup";
+
+            listView1.Items.Add(vistaOpenFileDialog1.FileName);
+            Directory.Move(fileName, targetPath);
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Process.Start(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup");
         }
     }
 }
