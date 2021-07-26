@@ -117,7 +117,7 @@ namespace Tasks
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 30);
             this.label7.TabIndex = 10;
-            this.label7.Text = "v1.2.0";
+            this.label7.Text = "v1.3.0";
             // 
             // button4
             // 
