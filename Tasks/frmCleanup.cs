@@ -67,58 +67,32 @@ namespace Tasks
 
 
             if (checkBox3.Checked == true)
-                {
-                    try
-                    {
-                        var dir = new DirectoryInfo("C:\\Windows\\Temp");
-                        foreach (var file in Directory.GetFiles(dir.ToString()))
-                        {
-                            File.Delete(file);
-                            listBox1.Items.Add("Deleted " + file);
-                        }
-                        listBox1.Items.Add("Windows Temp Folder Cleaned.");
-                    }
-                    catch (IOException Ex)
-                    {
-
-                        listBox1.Items.Add("Unable to delete this file, it is currently in use by the system. Exception: " + Ex.GetType().Name);
-                    }
-
-                    try
-                    {
-                        var dir2 = new DirectoryInfo(Path.GetTempPath());
-                        foreach (var file2 in Directory.GetFiles(dir2.ToString()))
-                        {
-                            File.Delete(file2);
-                            listBox1.Items.Add("Deleted " + file2);
-                        }
-                    listBox1.Items.Add("AppData Temp Folder Cleaned.");
-                      }
-                catch (IOException Ex)
-                    {
-
-                        listBox1.Items.Add("Unable to delete this file, it is currently in use by the system. Exception: " + Ex.GetType().Name);
-                    }
-                }
-              catch (UnauthorizedAccessException Ex)
-            {
-
-                listBox1.Items.Add("Unable to delete this file, you do not have the right permissions to delete this file. Exception: " + Ex.GetType().Name);
-            }
-
-
-            if (checkBox4.Checked == true)
             {
                 try
                 {
-                    var dir = new DirectoryInfo("C:\\Windows\\Prefetch");
+                    var dir = new DirectoryInfo("C:\\Windows\\Temp");
                     foreach (var file in Directory.GetFiles(dir.ToString()))
                     {
                         File.Delete(file);
                         listBox1.Items.Add("Deleted " + file);
                     }
-                    listBox1.Items.Add("Prefetch Cleaned.");
+                    listBox1.Items.Add("Windows Temp Folder Cleaned.");
+                }
+                catch (IOException Ex)
+                {
 
+                    listBox1.Items.Add("Unable to delete this file, it is currently in use by the system. Exception: " + Ex.GetType().Name);
+                }
+
+                try
+                {
+                    var dir2 = new DirectoryInfo(Path.GetTempPath());
+                    foreach (var file2 in Directory.GetFiles(dir2.ToString()))
+                    {
+                        File.Delete(file2);
+                        listBox1.Items.Add("Deleted " + file2);
+                    }
+                    listBox1.Items.Add("AppData Temp Folder Cleaned.");
                 }
                 catch (IOException Ex)
                 {
@@ -133,10 +107,36 @@ namespace Tasks
                 }
 
 
-               
+                if (checkBox4.Checked == true)
+                {
+                    try
+                    {
+                        var dir = new DirectoryInfo("C:\\Windows\\Prefetch");
+                        foreach (var file in Directory.GetFiles(dir.ToString()))
+                        {
+                            File.Delete(file);
+                            listBox1.Items.Add("Deleted " + file);
+                        }
+                        listBox1.Items.Add("Prefetch Cleaned.");
+
+                    }
+                    catch (IOException Ex)
+                    {
+
+                        listBox1.Items.Add("Unable to delete this file, it is currently in use by the system. Exception: " + Ex.GetType().Name);
+                    }
+
+                    catch (UnauthorizedAccessException Ex)
+                    {
+
+                        listBox1.Items.Add("Unable to delete this file, you do not have the right permissions to delete this file. Exception: " + Ex.GetType().Name);
+                    }
+
+
+
+                }
             }
         }
-
    
 
         private void button2_Click(object sender, EventArgs e)
