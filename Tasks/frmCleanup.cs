@@ -153,6 +153,7 @@ namespace Tasks
 
         private void button2_Click(object sender, EventArgs e)
         {
+            listBox1.Items.Add("Debug log copied to clipboard.");
           Clipboard.SetText(string.Join("\n", listBox1.Items.Cast<string>()));
         }
     }
