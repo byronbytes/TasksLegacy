@@ -2,4 +2,6 @@
 Focus more on the features, not on the details.
 Also gotta learn c#
 
-7/24 - Got more progress on Cleanup
+7/24 - Practically finalized Cleanup with catches and stuff
+
+7/25 - Released second update
