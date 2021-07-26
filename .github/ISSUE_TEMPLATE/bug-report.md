@@ -1,6 +1,6 @@
 ---
 name: Bug Report
-about: Create a report to help us improve our application and make it less buggy.
+about: Create a report to help us improve our application.
 title: ''
 labels: bug
 assignees: byronbytes
@@ -21,12 +21,12 @@ Steps to reproduce the behavior:
 A clear and concise description of what you expected to happen.
 
 **Screenshots**
-If applicable, add screenshots to help explain your problem.
+If available, add screenshots to help explain your problem.
 
 **Desktop (please complete the following information):**
- - OS: [e.g. Windows 10]
- - OS Version [e.g. 21H1] (Find it by running winver)
-- App Version [e.g. v1.0.0]
+ - OS: [ex. Windows 10]
+ - OS Version [ex. 21H1 (You can find this by running winver)]
+- App Version [ex. v1.0.0]
 
 **Additional information**
 Add any other info about the problem here.
