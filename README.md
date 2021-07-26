@@ -27,5 +27,7 @@ What you want to do is download the most latest version from the Releases tab an
 # 📐Branch Information
 
 The **master** branch is meant for final commits to the project, and is the most stable compared to other branches.
+
 The **testing** branch is meant for testing features on the project, it is not as stable as master since new features get added early, but it can still be functioning.
+
 The **final** branch is meant for completely new features on the project, not even tested yet. It is not fully stable, and is coming soon.
