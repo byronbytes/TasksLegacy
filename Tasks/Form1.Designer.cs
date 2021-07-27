@@ -50,7 +50,7 @@ namespace Tasks
             this.button5 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblOS = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -82,6 +82,7 @@ namespace Tasks
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.label1);
+            this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel1.Location = new System.Drawing.Point(0, -4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(133, 585);
@@ -90,6 +91,7 @@ namespace Tasks
             // button6
             // 
             this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button6.Font = new System.Drawing.Font("Segoe UI Semilight", 10.75F);
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.Location = new System.Drawing.Point(0, 501);
@@ -126,6 +128,7 @@ namespace Tasks
             // button4
             // 
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.Font = new System.Drawing.Font("Segoe UI Semilight", 10.75F);
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.Location = new System.Drawing.Point(0, 446);
@@ -151,6 +154,7 @@ namespace Tasks
             // 
             // button1
             // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(9, 19);
@@ -205,6 +209,7 @@ namespace Tasks
             // 
             // button2
             // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Location = new System.Drawing.Point(9, 19);
@@ -244,6 +249,7 @@ namespace Tasks
             // 
             // button3
             // 
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Location = new System.Drawing.Point(9, 19);
@@ -282,6 +288,7 @@ namespace Tasks
             // 
             // button5
             // 
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Black;
             this.button5.Location = new System.Drawing.Point(9, 19);
@@ -308,7 +315,7 @@ namespace Tasks
             this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox5.Controls.Add(this.label8);
-            this.groupBox5.Controls.Add(this.label5);
+            this.groupBox5.Controls.Add(this.lblOS);
             this.groupBox5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.ForeColor = System.Drawing.Color.White;
             this.groupBox5.Location = new System.Drawing.Point(459, 12);
@@ -318,15 +325,15 @@ namespace Tasks
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "PC Info";
             // 
-            // label5
+            // lblOS
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label5.Location = new System.Drawing.Point(6, 19);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(173, 20);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Operating System: %os%";
+            this.lblOS.AutoSize = true;
+            this.lblOS.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblOS.Location = new System.Drawing.Point(6, 19);
+            this.lblOS.Name = "lblOS";
+            this.lblOS.Size = new System.Drawing.Size(173, 20);
+            this.lblOS.TabIndex = 8;
+            this.lblOS.Text = "Operating System: %os%";
             // 
             // label8
             // 
@@ -353,6 +360,7 @@ namespace Tasks
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = " Tasks";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -391,7 +399,7 @@ namespace Tasks
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblOS;
         private System.Windows.Forms.Label label8;
     }
 }

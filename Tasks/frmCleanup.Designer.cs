@@ -63,6 +63,7 @@ namespace Tasks
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox1.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
             this.checkBox1.Location = new System.Drawing.Point(6, 24);
             this.checkBox1.Name = "checkBox1";
@@ -74,6 +75,7 @@ namespace Tasks
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
+            this.checkBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox2.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
             this.checkBox2.Location = new System.Drawing.Point(6, 53);
             this.checkBox2.Name = "checkBox2";
@@ -85,6 +87,7 @@ namespace Tasks
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
+            this.checkBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox3.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
             this.checkBox3.Location = new System.Drawing.Point(6, 82);
             this.checkBox3.Name = "checkBox3";
@@ -96,6 +99,7 @@ namespace Tasks
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
+            this.checkBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox4.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
             this.checkBox4.Location = new System.Drawing.Point(6, 111);
             this.checkBox4.Name = "checkBox4";
@@ -106,6 +110,7 @@ namespace Tasks
             // 
             // button1
             // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.ForestGreen;
             this.button1.Location = new System.Drawing.Point(419, 354);
@@ -148,6 +153,7 @@ namespace Tasks
             // 
             // button2
             // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Location = new System.Drawing.Point(419, 298);
