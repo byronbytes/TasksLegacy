@@ -96,7 +96,7 @@ namespace Tasks
             this.btnSettings.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSettings.Font = new System.Drawing.Font("Segoe UI Semilight", 10.75F);
             this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(0, 501);
+            this.btnSettings.Location = new System.Drawing.Point(-1, 492);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(131, 31);
             this.btnSettings.TabIndex = 12;
