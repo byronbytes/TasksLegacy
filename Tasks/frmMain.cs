@@ -68,6 +68,12 @@ namespace Tasks
             frmTaskManager TaskManager = new frmTaskManager(); // Initialize cleanup form.
             TaskManager.Show(); // Show Form
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            frmSettings Settings = new frmSettings(); // Initialize cleanup form.
+            Settings.Show(); // Show Form
+        }
     }
 
 
