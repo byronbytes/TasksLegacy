@@ -1,7 +1,7 @@
 ﻿
 namespace Tasks
 {
-    partial class frmStartupManager
+    partial class frmStartupPrograms
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace Tasks
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStartupManager));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStartupPrograms));
             this.listView1 = new System.Windows.Forms.ListView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.viewFolderLocationWIPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();

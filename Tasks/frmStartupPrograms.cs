@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace Tasks
 {
-    public partial class frmStartupManager : Form
+    public partial class frmStartupPrograms : Form
     {
-        public frmStartupManager()
+        public frmStartupPrograms()
         {
             InitializeComponent();
         }

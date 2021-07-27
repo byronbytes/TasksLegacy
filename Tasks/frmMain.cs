@@ -29,8 +29,8 @@ namespace Tasks
 
         private void button3_Click(object sender, EventArgs e)
         {
-            frmStartupManager StartupManager = new frmStartupManager(); // Initialize cleanup form.
-            StartupManager.Show(); // Show Form
+            frmStartupPrograms StartupPrograms = new frmStartupPrograms(); // Initialize cleanup form.
+            StartupPrograms.Show(); // Show Form
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
