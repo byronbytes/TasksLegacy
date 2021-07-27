@@ -30,6 +30,7 @@ The **testing** branch is meant for testing features on the project, and it is n
 
 
 # 📸Screenshots
+Taken on version 1.4.0
 ![image](https://user-images.githubusercontent.com/53088136/127242093-91a5da33-c7d9-4b92-9eca-e3d07a3614f0.png)
 ![image](https://user-images.githubusercontent.com/53088136/127242110-6a258622-7a42-4d68-bbdd-32ef33243b1c.png)
 ![image](https://user-images.githubusercontent.com/53088136/127242208-e85fcc56-a456-4022-836e-69f028ef0343.png)
