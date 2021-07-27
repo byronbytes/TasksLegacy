@@ -92,7 +92,7 @@ namespace Tasks
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Tomato;
-            this.button3.Location = new System.Drawing.Point(488, 12);
+            this.button3.Location = new System.Drawing.Point(339, 51);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(143, 33);
             this.button3.TabIndex = 5;
@@ -134,10 +134,11 @@ namespace Tasks
             this.listBox1.ItemHeight = 17;
             this.listBox1.Items.AddRange(new object[] {
             "Debug Logs:"});
-            this.listBox1.Location = new System.Drawing.Point(339, 56);
+            this.listBox1.Location = new System.Drawing.Point(339, 90);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(290, 240);
             this.listBox1.TabIndex = 8;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // frmStartupPrograms
             // 

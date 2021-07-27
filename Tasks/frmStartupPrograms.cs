@@ -48,15 +48,21 @@ namespace Tasks
             listView1.Items.Add(vistaOpenFileDialog1.FileName);
             Directory.Move(fileName, targetPath);
             }
-            catch (Exception Ex)
+            catch (IOException Ex)
             {
 
+                listBox1.Items.Add("Exception Error: " + Ex.Message);
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Process.Start(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup");
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

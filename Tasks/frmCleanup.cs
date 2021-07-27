@@ -61,7 +61,7 @@ namespace Tasks
                 catch (IOException Ex)
                 {
 
-                    listBox1.Items.Add("Unable to delete this file, it is currently in use by the system. Exception: " + Ex.GetType().Name);
+                    listBox1.Items.Add("Exception Error: " + Ex.Message);
                 }
             }
 
@@ -81,7 +81,7 @@ namespace Tasks
                 catch (IOException Ex)
                 {
 
-                    listBox1.Items.Add("Unable to delete this file, it is currently in use by the system. Exception: " + Ex.GetType().Name);
+                    listBox1.Items.Add("Exception Error: " + Ex.Message);
                 }
 
                 try
@@ -97,13 +97,13 @@ namespace Tasks
                 catch (IOException Ex)
                 {
 
-                    listBox1.Items.Add("Unable to delete this file, it is currently in use by the system. Exception: " + Ex.GetType().Name);
+                    listBox1.Items.Add("Exception Error: " + Ex.Message);
                 }
 
                 catch (UnauthorizedAccessException Ex)
                 {
 
-                    listBox1.Items.Add("Unable to delete this file, you do not have the right permissions to delete this file. Exception: " + Ex.GetType().Name);
+                    listBox1.Items.Add("Exception Error: You are not allowed to access this file." + Ex.Message);
                 }
 
 
@@ -123,13 +123,13 @@ namespace Tasks
                     catch (IOException Ex)
                     {
 
-                        listBox1.Items.Add("Unable to delete this file, it is currently in use by the system. Exception: " + Ex.GetType().Name);
+                        listBox1.Items.Add("Exception Error: " + Ex.GetType().Name);
                     }
 
                     catch (UnauthorizedAccessException Ex)
                     {
 
-                        listBox1.Items.Add("Unable to delete this file, you do not have the right permissions to delete this file. Exception: " + Ex.GetType().Name);
+                        listBox1.Items.Add("Exception Error: " + Ex.GetType().Name);
                     }
 
 
