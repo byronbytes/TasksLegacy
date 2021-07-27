@@ -87,7 +87,7 @@ namespace Tasks
             this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel1.Location = new System.Drawing.Point(0, -4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(133, 585);
+            this.panel1.Size = new System.Drawing.Size(133, 594);
             this.panel1.TabIndex = 1;
             // 
             // btnSettings
@@ -96,7 +96,7 @@ namespace Tasks
             this.btnSettings.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSettings.Font = new System.Drawing.Font("Segoe UI Semilight", 10.75F);
             this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(-1, 492);
+            this.btnSettings.Location = new System.Drawing.Point(0, 488);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(131, 31);
             this.btnSettings.TabIndex = 12;
@@ -134,9 +134,9 @@ namespace Tasks
             this.btnChangelog.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnChangelog.Font = new System.Drawing.Font("Segoe UI Semilight", 10.75F);
             this.btnChangelog.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChangelog.Location = new System.Drawing.Point(0, 446);
+            this.btnChangelog.Location = new System.Drawing.Point(0, 428);
             this.btnChangelog.Name = "btnChangelog";
-            this.btnChangelog.Size = new System.Drawing.Size(131, 31);
+            this.btnChangelog.Size = new System.Drawing.Size(133, 31);
             this.btnChangelog.TabIndex = 9;
             this.btnChangelog.Text = "Changelog";
             this.btnChangelog.UseVisualStyleBackColor = true;

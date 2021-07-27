@@ -53,9 +53,10 @@ namespace Tasks
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(6, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(228, 30);
+            this.label2.Size = new System.Drawing.Size(228, 45);
             this.label2.TabIndex = 1;
-            this.label2.Text = "+ Internal code renaming\r\n+ Made the changelog 80% faster to open";
+            this.label2.Text = "+ Internal code renaming\r\n+ Made the changelog 80% faster to open\r\n+ Made Startup" +
+    "Programs a bit larger";
             // 
             // frmChangelog
             // 
