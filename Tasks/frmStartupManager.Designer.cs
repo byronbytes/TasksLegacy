@@ -52,7 +52,7 @@ namespace Tasks
             this.listView1.Location = new System.Drawing.Point(12, 12);
             this.listView1.Name = "listView1";
             this.listView1.ShowItemToolTips = true;
-            this.listView1.Size = new System.Drawing.Size(307, 382);
+            this.listView1.Size = new System.Drawing.Size(307, 445);
             this.listView1.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
@@ -79,7 +79,7 @@ namespace Tasks
             this.button1.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.button1.Location = new System.Drawing.Point(339, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 30);
+            this.button1.Size = new System.Drawing.Size(143, 33);
             this.button1.TabIndex = 2;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = true;
@@ -90,9 +90,9 @@ namespace Tasks
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Tomato;
-            this.button3.Location = new System.Drawing.Point(339, 58);
+            this.button3.Location = new System.Drawing.Point(339, 51);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(115, 30);
+            this.button3.Size = new System.Drawing.Size(143, 33);
             this.button3.TabIndex = 5;
             this.button3.Text = "Remove";
             this.button3.UseVisualStyleBackColor = true;
@@ -108,7 +108,7 @@ namespace Tasks
             // 
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(339, 358);
+            this.button2.Location = new System.Drawing.Point(339, 421);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(235, 36);
             this.button2.TabIndex = 6;
@@ -121,7 +121,7 @@ namespace Tasks
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.ClientSize = new System.Drawing.Size(586, 406);
+            this.ClientSize = new System.Drawing.Size(641, 469);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
