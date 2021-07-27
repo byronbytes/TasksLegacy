@@ -50,10 +50,10 @@ namespace Tasks
             this.btnTaskManager = new System.Windows.Forms.Button();
             this.lblTaskManagerDesc = new System.Windows.Forms.Label();
             this.groupPCInfo = new System.Windows.Forms.GroupBox();
+            this.lblOSVer = new System.Windows.Forms.Label();
+            this.lblRootDirectory = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
             this.lblComputerName = new System.Windows.Forms.Label();
-            this.lblRootDirectory = new System.Windows.Forms.Label();
-            this.lblOSVer = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupCleanup.SuspendLayout();
             this.groupBloatwareRemoval.SuspendLayout();
@@ -124,9 +124,9 @@ namespace Tasks
             this.lblVersion.ForeColor = System.Drawing.Color.Gray;
             this.lblVersion.Location = new System.Drawing.Point(70, 0);
             this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(60, 30);
+            this.lblVersion.Size = new System.Drawing.Size(64, 30);
             this.lblVersion.TabIndex = 10;
-            this.lblVersion.Text = "v1.3.1";
+            this.lblVersion.Text = "v1.4.0";
             // 
             // btnChangelog
             // 
@@ -331,6 +331,26 @@ namespace Tasks
             this.groupPCInfo.TabStop = false;
             this.groupPCInfo.Text = "PC Info";
             // 
+            // lblOSVer
+            // 
+            this.lblOSVer.AutoSize = true;
+            this.lblOSVer.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblOSVer.Location = new System.Drawing.Point(6, 79);
+            this.lblOSVer.Name = "lblOSVer";
+            this.lblOSVer.Size = new System.Drawing.Size(131, 20);
+            this.lblOSVer.TabIndex = 11;
+            this.lblOSVer.Text = "OS Version: %ver%";
+            // 
+            // lblRootDirectory
+            // 
+            this.lblRootDirectory.AutoSize = true;
+            this.lblRootDirectory.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblRootDirectory.Location = new System.Drawing.Point(6, 59);
+            this.lblRootDirectory.Name = "lblRootDirectory";
+            this.lblRootDirectory.Size = new System.Drawing.Size(139, 20);
+            this.lblRootDirectory.TabIndex = 10;
+            this.lblRootDirectory.Text = "Directory: %direct%";
+            // 
             // lblUserName
             // 
             this.lblUserName.AutoSize = true;
@@ -350,26 +370,6 @@ namespace Tasks
             this.lblComputerName.Size = new System.Drawing.Size(165, 20);
             this.lblComputerName.TabIndex = 8;
             this.lblComputerName.Text = "Computer Name: %os%";
-            // 
-            // lblRootDirectory
-            // 
-            this.lblRootDirectory.AutoSize = true;
-            this.lblRootDirectory.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lblRootDirectory.Location = new System.Drawing.Point(6, 59);
-            this.lblRootDirectory.Name = "lblRootDirectory";
-            this.lblRootDirectory.Size = new System.Drawing.Size(139, 20);
-            this.lblRootDirectory.TabIndex = 10;
-            this.lblRootDirectory.Text = "Directory: %direct%";
-            // 
-            // lblOSVer
-            // 
-            this.lblOSVer.AutoSize = true;
-            this.lblOSVer.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lblOSVer.Location = new System.Drawing.Point(6, 79);
-            this.lblOSVer.Name = "lblOSVer";
-            this.lblOSVer.Size = new System.Drawing.Size(131, 20);
-            this.lblOSVer.TabIndex = 11;
-            this.lblOSVer.Text = "OS Version: %ver%";
             // 
             // frmMain
             // 
