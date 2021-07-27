@@ -43,11 +43,15 @@ namespace Tasks
         private void vistaOpenFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
             string fileName = vistaOpenFileDialog1.FileName;
-            string targetPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) +"\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup";
-
+            string targetPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup";
+            try { 
             listView1.Items.Add(vistaOpenFileDialog1.FileName);
             Directory.Move(fileName, targetPath);
+            }
+            catch (Exception Ex)
+            {
 
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

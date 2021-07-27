@@ -38,6 +38,8 @@ namespace Tasks
             this.button3 = new System.Windows.Forms.Button();
             this.vistaOpenFileDialog1 = new Ookii.Dialogs.WinForms.VistaOpenFileDialog();
             this.button2 = new System.Windows.Forms.Button();
+            this.taskDialog1 = new Ookii.Dialogs.WinForms.TaskDialog(this.components);
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,26 +110,48 @@ namespace Tasks
             // 
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(339, 421);
+            this.button2.Location = new System.Drawing.Point(339, 420);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(235, 36);
+            this.button2.Size = new System.Drawing.Size(290, 37);
             this.button2.TabIndex = 6;
             this.button2.Text = "Open Startup Folder";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // frmStartupManager
+            // taskDialog1
+            // 
+            this.taskDialog1.MainInstruction = "taskDialog1";
+            // 
+            // listBox1
+            // 
+            this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.listBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.listBox1.ForeColor = System.Drawing.Color.White;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.HorizontalScrollbar = true;
+            this.listBox1.ItemHeight = 17;
+            this.listBox1.Items.AddRange(new object[] {
+            "Debug Logs:"});
+            this.listBox1.Location = new System.Drawing.Point(339, 90);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(290, 206);
+            this.listBox1.TabIndex = 8;
+            // 
+            // frmStartupPrograms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(641, 469);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmStartupManager";
+            this.Name = "frmStartupPrograms";
             this.Text = "Startup Programs";
             this.Load += new System.EventHandler(this.frmStartupManager_Load);
             this.contextMenuStrip1.ResumeLayout(false);
@@ -144,5 +168,7 @@ namespace Tasks
         private System.Windows.Forms.Button button3;
         private Ookii.Dialogs.WinForms.VistaOpenFileDialog vistaOpenFileDialog1;
         private System.Windows.Forms.Button button2;
+        private Ookii.Dialogs.WinForms.TaskDialog taskDialog1;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
