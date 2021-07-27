@@ -50,8 +50,10 @@ namespace Tasks
             this.button5 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.lblOS = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblUserName = new System.Windows.Forms.Label();
+            this.lblComputerName = new System.Windows.Forms.Label();
+            this.lblRootDirectory = new System.Windows.Forms.Label();
+            this.lblOSVer = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -314,8 +316,10 @@ namespace Tasks
             // 
             this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox5.Controls.Add(this.label8);
-            this.groupBox5.Controls.Add(this.lblOS);
+            this.groupBox5.Controls.Add(this.lblOSVer);
+            this.groupBox5.Controls.Add(this.lblRootDirectory);
+            this.groupBox5.Controls.Add(this.lblUserName);
+            this.groupBox5.Controls.Add(this.lblComputerName);
             this.groupBox5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.ForeColor = System.Drawing.Color.White;
             this.groupBox5.Location = new System.Drawing.Point(459, 12);
@@ -325,27 +329,47 @@ namespace Tasks
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "PC Info";
             // 
-            // lblOS
+            // lblUserName
             // 
-            this.lblOS.AutoSize = true;
-            this.lblOS.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lblOS.Location = new System.Drawing.Point(6, 19);
-            this.lblOS.Name = "lblOS";
-            this.lblOS.Size = new System.Drawing.Size(173, 20);
-            this.lblOS.TabIndex = 8;
-            this.lblOS.Text = "Operating System: %os%";
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblUserName.Location = new System.Drawing.Point(6, 39);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(150, 20);
+            this.lblUserName.TabIndex = 9;
+            this.lblUserName.Text = "User Name: %name%";
             // 
-            // label8
+            // lblComputerName
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label8.Location = new System.Drawing.Point(6, 50);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(173, 20);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "Operating System: %os%";
+            this.lblComputerName.AutoSize = true;
+            this.lblComputerName.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblComputerName.Location = new System.Drawing.Point(6, 19);
+            this.lblComputerName.Name = "lblComputerName";
+            this.lblComputerName.Size = new System.Drawing.Size(165, 20);
+            this.lblComputerName.TabIndex = 8;
+            this.lblComputerName.Text = "Computer Name: %os%";
             // 
-            // Form1
+            // lblRootDirectory
+            // 
+            this.lblRootDirectory.AutoSize = true;
+            this.lblRootDirectory.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblRootDirectory.Location = new System.Drawing.Point(6, 59);
+            this.lblRootDirectory.Name = "lblRootDirectory";
+            this.lblRootDirectory.Size = new System.Drawing.Size(139, 20);
+            this.lblRootDirectory.TabIndex = 10;
+            this.lblRootDirectory.Text = "Directory: %direct%";
+            // 
+            // lblOSVer
+            // 
+            this.lblOSVer.AutoSize = true;
+            this.lblOSVer.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblOSVer.Location = new System.Drawing.Point(6, 79);
+            this.lblOSVer.Name = "lblOSVer";
+            this.lblOSVer.Size = new System.Drawing.Size(131, 20);
+            this.lblOSVer.TabIndex = 11;
+            this.lblOSVer.Text = "OS Version: %ver%";
+            // 
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -358,7 +382,7 @@ namespace Tasks
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "frmMain";
             this.Text = " Tasks";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
@@ -399,8 +423,10 @@ namespace Tasks
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Label lblOS;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblComputerName;
+        private System.Windows.Forms.Label lblUserName;
+        private System.Windows.Forms.Label lblRootDirectory;
+        private System.Windows.Forms.Label lblOSVer;
     }
 }
 

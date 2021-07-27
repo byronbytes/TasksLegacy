@@ -56,7 +56,11 @@ namespace Tasks
 
         private void Form1_Load(object sender, EventArgs e)
         {
-          
+            lblComputerName.Text = "PC Name: " + Environment.MachineName;
+            lblUserName.Text = "User Name: " + Environment.UserName;
+            lblRootDirectory.Text = "Root Directory: " + Environment.SystemDirectory;
+            lblOSVer.Text = "OS Version: " + Environment.Version;
+
         }
     }
 
