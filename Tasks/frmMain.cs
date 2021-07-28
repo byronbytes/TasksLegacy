@@ -74,6 +74,16 @@ namespace Tasks
             frmSettings Settings = new frmSettings(); // Initialize cleanup form.
             Settings.Show(); // Show Form
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://discord.gg/SeESEAaenv");
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://twitter.com/Lite_Tools");
+        }
     }
 
 

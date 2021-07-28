@@ -32,6 +32,8 @@ namespace Tasks
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.lblTitle = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSettings = new System.Windows.Forms.Button();
             this.lblFoundBug = new System.Windows.Forms.LinkLabel();
             this.lblVersion = new System.Windows.Forms.Label();
@@ -55,6 +57,8 @@ namespace Tasks
             this.lblUserName = new System.Windows.Forms.Label();
             this.lblComputerName = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupCleanup.SuspendLayout();
             this.groupBloatwareRemoval.SuspendLayout();
             this.groupStartupPrograms.SuspendLayout();
@@ -78,6 +82,8 @@ namespace Tasks
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnSettings);
             this.panel1.Controls.Add(this.lblFoundBug);
             this.panel1.Controls.Add(this.lblVersion);
@@ -89,6 +95,30 @@ namespace Tasks
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(133, 594);
             this.panel1.TabIndex = 1;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::Tasks.Properties.Resources.Twitter;
+            this.pictureBox2.Location = new System.Drawing.Point(54, 525);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(37, 33);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 13;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::Tasks.Properties.Resources.Discord;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 525);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(37, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnSettings
             // 
@@ -389,6 +419,8 @@ namespace Tasks
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupCleanup.ResumeLayout(false);
             this.groupCleanup.PerformLayout();
             this.groupBloatwareRemoval.ResumeLayout(false);
@@ -429,6 +461,8 @@ namespace Tasks
         private System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.Label lblRootDirectory;
         private System.Windows.Forms.Label lblOSVer;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

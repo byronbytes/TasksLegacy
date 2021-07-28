@@ -103,7 +103,7 @@ namespace Tasks
                 catch (UnauthorizedAccessException Ex)
                 {
 
-                    listBox1.Items.Add("Exception Error: You are not allowed to access this file." + Ex.Message);
+                    listBox1.Items.Add("Exception Error: " + Ex.Message);
                 }
 
 
