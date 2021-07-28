@@ -13,7 +13,7 @@ Tasks helps your computer run faster by allowing you to clean trash, remove bloa
 
 # 🦺Prerequisites
 
-To be able to run Tasks, you will need:
+To be able to run Tasks, you will need the following:
 - [Microsoft .NET Framework 3.0](https://www.microsoft.com/en-us/download/details.aspx?id=3005) or higher
 
 
@@ -28,4 +28,11 @@ The **master** branch holds the most stable updates for the project, and if you 
 
 The **testing** branch is meant for testing features on the project, and it is not as stable as master. New stuff get added to this branch, but they will not be quite stable and may either work as intended or not.
 
-The **final** branch is meant for completely new features on the project and not even tested yet. It is not fully stable, and will come to the master branch soon.
+
+# 📸Screenshots
+These screenshots were taken on Version 1.4.0, later versions may look different.
+
+![image](https://user-images.githubusercontent.com/53088136/127242093-91a5da33-c7d9-4b92-9eca-e3d07a3614f0.png)
+![image](https://user-images.githubusercontent.com/53088136/127242110-6a258622-7a42-4d68-bbdd-32ef33243b1c.png)
+![image](https://user-images.githubusercontent.com/53088136/127242208-e85fcc56-a456-4022-836e-69f028ef0343.png)
+
