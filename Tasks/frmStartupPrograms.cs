@@ -46,7 +46,7 @@ namespace Tasks
             string targetPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup";
             try { 
             listView1.Items.Add(vistaOpenFileDialog1.FileName);
-            Directory.Move(fileName, targetPath);
+            File.Move(fileName, targetPath);
             }
             catch (IOException Ex)
             {
@@ -61,6 +61,11 @@ namespace Tasks
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
 
         }

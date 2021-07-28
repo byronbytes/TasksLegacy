@@ -40,6 +40,7 @@ namespace Tasks
             this.button2 = new System.Windows.Forms.Button();
             this.taskDialog1 = new Ookii.Dialogs.WinForms.TaskDialog(this.components);
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -134,11 +135,16 @@ namespace Tasks
             this.listBox1.ItemHeight = 17;
             this.listBox1.Items.AddRange(new object[] {
             "Debug Logs:"});
-            this.listBox1.Location = new System.Drawing.Point(339, 90);
+            this.listBox1.Location = new System.Drawing.Point(339, 107);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(290, 240);
             this.listBox1.TabIndex = 8;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // frmStartupPrograms
             // 
@@ -171,5 +177,6 @@ namespace Tasks
         private System.Windows.Forms.Button button2;
         private Ookii.Dialogs.WinForms.TaskDialog taskDialog1;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
