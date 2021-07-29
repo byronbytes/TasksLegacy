@@ -42,17 +42,7 @@ namespace Tasks
 
         private void vistaOpenFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
-            string fileName = vistaOpenFileDialog1.FileName;
-            string targetPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup";
-            try { 
-            listView1.Items.Add(vistaOpenFileDialog1.FileName);
-            File.Move(fileName, targetPath);
-            }
-            catch (IOException Ex)
-            {
-
-                listBox1.Items.Add("Exception Error: " + Ex.Message);
-            }
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -67,7 +57,18 @@ namespace Tasks
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
+            string fileName = vistaOpenFileDialog1.FileName;
+            string targetPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup";
+            try
+            {
+                listView1.Items.Add(vistaOpenFileDialog1.FileName);
+                File.Move(fileName, targetPath);
+            }
+            catch (IOException Ex)
+            {
 
+                listBox1.Items.Add("Exception Error: " + Ex.Message);
+            }
         }
     }
 }

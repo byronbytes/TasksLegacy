@@ -106,6 +106,12 @@
     <Compile Include="frmSettings.Designer.cs">
       <DependentUpon>frmSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSiteBlocker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSiteBlocker.Designer.cs">
+      <DependentUpon>frmSiteBlocker.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmStartupPrograms.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSettings.resx">
       <DependentUpon>frmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSiteBlocker.resx">
+      <DependentUpon>frmSiteBlocker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmStartupPrograms.resx">
       <DependentUpon>frmStartupPrograms.cs</DependentUpon>

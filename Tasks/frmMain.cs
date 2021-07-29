@@ -84,6 +84,11 @@ namespace Tasks
         {
             Process.Start("https://twitter.com/Lite_Tools");
         }
+
+        private void btnSiteBlocker_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

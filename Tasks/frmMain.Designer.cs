@@ -56,6 +56,9 @@ namespace Tasks
             this.lblRootDirectory = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
             this.lblComputerName = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnSiteBlocker = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,6 +67,7 @@ namespace Tasks
             this.groupStartupPrograms.SuspendLayout();
             this.groupTaskManager.SuspendLayout();
             this.groupPCInfo.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -100,7 +104,7 @@ namespace Tasks
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::Tasks.Properties.Resources.Twitter;
-            this.pictureBox2.Location = new System.Drawing.Point(54, 525);
+            this.pictureBox2.Location = new System.Drawing.Point(55, 525);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(37, 33);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -356,7 +360,7 @@ namespace Tasks
             this.groupPCInfo.ForeColor = System.Drawing.Color.White;
             this.groupPCInfo.Location = new System.Drawing.Point(459, 12);
             this.groupPCInfo.Name = "groupPCInfo";
-            this.groupPCInfo.Size = new System.Drawing.Size(336, 244);
+            this.groupPCInfo.Size = new System.Drawing.Size(324, 244);
             this.groupPCInfo.TabIndex = 5;
             this.groupPCInfo.TabStop = false;
             this.groupPCInfo.Text = "PC Info";
@@ -401,12 +405,53 @@ namespace Tasks
             this.lblComputerName.TabIndex = 8;
             this.lblComputerName.Text = "Computer Name: %os%";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox1.Controls.Add(this.btnSiteBlocker);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(469, 262);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(314, 119);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Site Blocker";
+            // 
+            // btnSiteBlocker
+            // 
+            this.btnSiteBlocker.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSiteBlocker.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSiteBlocker.ForeColor = System.Drawing.Color.Black;
+            this.btnSiteBlocker.Location = new System.Drawing.Point(9, 19);
+            this.btnSiteBlocker.Name = "btnSiteBlocker";
+            this.btnSiteBlocker.Size = new System.Drawing.Size(141, 40);
+            this.btnSiteBlocker.TabIndex = 2;
+            this.btnSiteBlocker.Text = "Site Blocker";
+            this.btnSiteBlocker.UseVisualStyleBackColor = true;
+            this.btnSiteBlocker.Click += new System.EventHandler(this.btnSiteBlocker_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(6, 62);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(271, 51);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "This will block many malicious websites such as \r\nRAT connection ports, and popup" +
+    " sites that may\r\ncause a nuisance in the background.";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(807, 552);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupPCInfo);
             this.Controls.Add(this.groupTaskManager);
             this.Controls.Add(this.groupStartupPrograms);
@@ -431,6 +476,8 @@ namespace Tasks
             this.groupTaskManager.PerformLayout();
             this.groupPCInfo.ResumeLayout(false);
             this.groupPCInfo.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -463,6 +510,9 @@ namespace Tasks
         private System.Windows.Forms.Label lblOSVer;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnSiteBlocker;
+        private System.Windows.Forms.Label label1;
     }
 }
 
