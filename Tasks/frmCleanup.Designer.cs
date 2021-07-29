@@ -55,7 +55,7 @@ namespace Tasks
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox1.Location = new System.Drawing.Point(12, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(378, 140);
+            this.groupBox1.Size = new System.Drawing.Size(420, 140);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cleanup Settings";
@@ -113,7 +113,7 @@ namespace Tasks
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.ForestGreen;
-            this.button1.Location = new System.Drawing.Point(419, 354);
+            this.button1.Location = new System.Drawing.Point(472, 405);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 36);
             this.button1.TabIndex = 1;
@@ -135,7 +135,7 @@ namespace Tasks
             "Cleanup Logs:"});
             this.listBox1.Location = new System.Drawing.Point(12, 150);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(378, 240);
+            this.listBox1.Size = new System.Drawing.Size(420, 291);
             this.listBox1.TabIndex = 7;
             // 
             // taskDialog1
@@ -156,7 +156,7 @@ namespace Tasks
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(419, 298);
+            this.button2.Location = new System.Drawing.Point(472, 349);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 50);
             this.button2.TabIndex = 8;
@@ -169,7 +169,7 @@ namespace Tasks
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.ClientSize = new System.Drawing.Size(561, 402);
+            this.ClientSize = new System.Drawing.Size(614, 448);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button1);
