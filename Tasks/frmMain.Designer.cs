@@ -364,7 +364,7 @@ namespace Tasks
             this.groupPCInfo.ForeColor = System.Drawing.Color.White;
             this.groupPCInfo.Location = new System.Drawing.Point(459, 12);
             this.groupPCInfo.Name = "groupPCInfo";
-            this.groupPCInfo.Size = new System.Drawing.Size(324, 244);
+            this.groupPCInfo.Size = new System.Drawing.Size(324, 119);
             this.groupPCInfo.TabIndex = 5;
             this.groupPCInfo.TabStop = false;
             this.groupPCInfo.Text = "PC Info";
@@ -417,7 +417,7 @@ namespace Tasks
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(469, 262);
+            this.groupBox1.Location = new System.Drawing.Point(469, 137);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(314, 119);
             this.groupBox1.TabIndex = 7;
@@ -457,7 +457,7 @@ namespace Tasks
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(469, 387);
+            this.groupBox2.Location = new System.Drawing.Point(469, 262);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(314, 119);
             this.groupBox2.TabIndex = 8;
