@@ -8,5 +8,10 @@ namespace Tasks
         {
             InitializeComponent();
         }
+
+        private void frmSettings_Load(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

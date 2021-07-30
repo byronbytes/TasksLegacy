@@ -32,10 +32,13 @@ namespace Tasks
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.lblTitle = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSettings = new System.Windows.Forms.Button();
-            this.lblFoundBug = new System.Windows.Forms.LinkLabel();
             this.lblVersion = new System.Windows.Forms.Label();
             this.btnChangelog = new System.Windows.Forms.Button();
+            this.lblFoundBug = new System.Windows.Forms.LinkLabel();
             this.btnCleanup = new System.Windows.Forms.Button();
             this.lblCleanupDesc = new System.Windows.Forms.Label();
             this.groupCleanup = new System.Windows.Forms.GroupBox();
@@ -56,19 +59,16 @@ namespace Tasks
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnSiteBlocker = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupCleanup.SuspendLayout();
             this.groupBloatwareRemoval.SuspendLayout();
             this.groupStartupPrograms.SuspendLayout();
             this.groupTaskManager.SuspendLayout();
             this.groupPCInfo.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -76,10 +76,9 @@ namespace Tasks
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI Semilight", 16.75F);
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(13, 12);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitle.Location = new System.Drawing.Point(10, 10);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(77, 38);
+            this.lblTitle.Size = new System.Drawing.Size(65, 31);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Tasks";
             // 
@@ -96,11 +95,49 @@ namespace Tasks
             this.panel1.Controls.Add(this.btnChangelog);
             this.panel1.Controls.Add(this.lblTitle);
             this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Location = new System.Drawing.Point(0, -5);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(0, -4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(177, 731);
+            this.panel1.Size = new System.Drawing.Size(133, 594);
             this.panel1.TabIndex = 1;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::Tasks.Properties.Resources.GitHub_32x32;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 525);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(22, 24);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 14;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::Tasks.Properties.Resources.Twitter;
+            this.pictureBox2.Location = new System.Drawing.Point(94, 525);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 13;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::Tasks.Properties.Resources.Discord;
+            this.pictureBox1.Location = new System.Drawing.Point(52, 525);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnSettings
             // 
@@ -108,39 +145,22 @@ namespace Tasks
             this.btnSettings.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSettings.Font = new System.Drawing.Font("Segoe UI Semilight", 10.75F);
             this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(0, 601);
-            this.btnSettings.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSettings.Location = new System.Drawing.Point(0, 488);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(175, 38);
+            this.btnSettings.Size = new System.Drawing.Size(133, 31);
             this.btnSettings.TabIndex = 12;
             this.btnSettings.Text = "Settings";
             this.btnSettings.UseVisualStyleBackColor = true;
             this.btnSettings.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // lblFoundBug
-            // 
-            this.lblFoundBug.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblFoundBug.AutoSize = true;
-            this.lblFoundBug.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFoundBug.LinkColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblFoundBug.Location = new System.Drawing.Point(919, 641);
-            this.lblFoundBug.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblFoundBug.Name = "lblFoundBug";
-            this.lblFoundBug.Size = new System.Drawing.Size(125, 25);
-            this.lblFoundBug.TabIndex = 11;
-            this.lblFoundBug.TabStop = true;
-            this.lblFoundBug.Text = "Found A Bug?";
-            this.lblFoundBug.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // lblVersion
             // 
             this.lblVersion.AutoSize = true;
             this.lblVersion.Font = new System.Drawing.Font("Segoe UI Semilight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersion.ForeColor = System.Drawing.Color.Gray;
-            this.lblVersion.Location = new System.Drawing.Point(93, 0);
-            this.lblVersion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblVersion.Location = new System.Drawing.Point(70, 0);
             this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(84, 37);
+            this.lblVersion.Size = new System.Drawing.Size(66, 30);
             this.lblVersion.TabIndex = 10;
             this.lblVersion.Text = "v2.0.0";
             // 
@@ -150,24 +170,36 @@ namespace Tasks
             this.btnChangelog.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnChangelog.Font = new System.Drawing.Font("Segoe UI Semilight", 10.75F);
             this.btnChangelog.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChangelog.Location = new System.Drawing.Point(0, 558);
-            this.btnChangelog.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChangelog.Location = new System.Drawing.Point(-1, 446);
             this.btnChangelog.Name = "btnChangelog";
-            this.btnChangelog.Size = new System.Drawing.Size(175, 38);
+            this.btnChangelog.Size = new System.Drawing.Size(134, 31);
             this.btnChangelog.TabIndex = 9;
             this.btnChangelog.Text = "Changelog";
             this.btnChangelog.UseVisualStyleBackColor = true;
             this.btnChangelog.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // lblFoundBug
+            // 
+            this.lblFoundBug.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblFoundBug.AutoSize = true;
+            this.lblFoundBug.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFoundBug.LinkColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblFoundBug.Location = new System.Drawing.Point(689, 521);
+            this.lblFoundBug.Name = "lblFoundBug";
+            this.lblFoundBug.Size = new System.Drawing.Size(100, 20);
+            this.lblFoundBug.TabIndex = 11;
+            this.lblFoundBug.TabStop = true;
+            this.lblFoundBug.Text = "Found A Bug?";
+            this.lblFoundBug.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // btnCleanup
             // 
             this.btnCleanup.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCleanup.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCleanup.ForeColor = System.Drawing.Color.Black;
-            this.btnCleanup.Location = new System.Drawing.Point(12, 23);
-            this.btnCleanup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCleanup.Location = new System.Drawing.Point(9, 19);
             this.btnCleanup.Name = "btnCleanup";
-            this.btnCleanup.Size = new System.Drawing.Size(188, 49);
+            this.btnCleanup.Size = new System.Drawing.Size(141, 40);
             this.btnCleanup.TabIndex = 2;
             this.btnCleanup.Text = "Cleanup";
             this.btnCleanup.UseVisualStyleBackColor = true;
@@ -178,10 +210,9 @@ namespace Tasks
             this.lblCleanupDesc.AutoSize = true;
             this.lblCleanupDesc.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCleanupDesc.ForeColor = System.Drawing.Color.White;
-            this.lblCleanupDesc.Location = new System.Drawing.Point(8, 76);
-            this.lblCleanupDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCleanupDesc.Location = new System.Drawing.Point(6, 62);
             this.lblCleanupDesc.Name = "lblCleanupDesc";
-            this.lblCleanupDesc.Size = new System.Drawing.Size(391, 46);
+            this.lblCleanupDesc.Size = new System.Drawing.Size(299, 34);
             this.lblCleanupDesc.TabIndex = 3;
             this.lblCleanupDesc.Text = "Cleanup will clean your computer of junk  and temp\r\n folders. You may customize w" +
     "hat folders get cleared.";
@@ -192,11 +223,9 @@ namespace Tasks
             this.groupCleanup.Controls.Add(this.lblCleanupDesc);
             this.groupCleanup.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupCleanup.ForeColor = System.Drawing.Color.White;
-            this.groupCleanup.Location = new System.Drawing.Point(185, 15);
-            this.groupCleanup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupCleanup.Location = new System.Drawing.Point(139, 12);
             this.groupCleanup.Name = "groupCleanup";
-            this.groupCleanup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupCleanup.Size = new System.Drawing.Size(419, 146);
+            this.groupCleanup.Size = new System.Drawing.Size(314, 119);
             this.groupCleanup.TabIndex = 4;
             this.groupCleanup.TabStop = false;
             this.groupCleanup.Text = "Cleaning";
@@ -207,11 +236,9 @@ namespace Tasks
             this.groupBloatwareRemoval.Controls.Add(this.lblBloatwareDesc);
             this.groupBloatwareRemoval.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBloatwareRemoval.ForeColor = System.Drawing.Color.White;
-            this.groupBloatwareRemoval.Location = new System.Drawing.Point(185, 169);
-            this.groupBloatwareRemoval.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBloatwareRemoval.Location = new System.Drawing.Point(139, 137);
             this.groupBloatwareRemoval.Name = "groupBloatwareRemoval";
-            this.groupBloatwareRemoval.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBloatwareRemoval.Size = new System.Drawing.Size(419, 146);
+            this.groupBloatwareRemoval.Size = new System.Drawing.Size(314, 119);
             this.groupBloatwareRemoval.TabIndex = 5;
             this.groupBloatwareRemoval.TabStop = false;
             this.groupBloatwareRemoval.Text = "Remove Bloatware";
@@ -221,10 +248,9 @@ namespace Tasks
             this.btnRemoveBloat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRemoveBloat.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveBloat.ForeColor = System.Drawing.Color.Black;
-            this.btnRemoveBloat.Location = new System.Drawing.Point(12, 23);
-            this.btnRemoveBloat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRemoveBloat.Location = new System.Drawing.Point(9, 19);
             this.btnRemoveBloat.Name = "btnRemoveBloat";
-            this.btnRemoveBloat.Size = new System.Drawing.Size(188, 49);
+            this.btnRemoveBloat.Size = new System.Drawing.Size(141, 40);
             this.btnRemoveBloat.TabIndex = 2;
             this.btnRemoveBloat.Text = "Remove Bloat";
             this.btnRemoveBloat.UseVisualStyleBackColor = true;
@@ -235,10 +261,9 @@ namespace Tasks
             this.lblBloatwareDesc.AutoSize = true;
             this.lblBloatwareDesc.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBloatwareDesc.ForeColor = System.Drawing.Color.White;
-            this.lblBloatwareDesc.Location = new System.Drawing.Point(8, 76);
-            this.lblBloatwareDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBloatwareDesc.Location = new System.Drawing.Point(6, 62);
             this.lblBloatwareDesc.Name = "lblBloatwareDesc";
-            this.lblBloatwareDesc.Size = new System.Drawing.Size(378, 69);
+            this.lblBloatwareDesc.Size = new System.Drawing.Size(289, 51);
             this.lblBloatwareDesc.TabIndex = 3;
             this.lblBloatwareDesc.Text = "This will remove bloat from your computer such as \r\nbuilt in Windows Store Apps, " +
     "and remove \r\nbloatware registry keys.\r\n";
@@ -249,11 +274,9 @@ namespace Tasks
             this.groupStartupPrograms.Controls.Add(this.lblStartupProgramsDesc);
             this.groupStartupPrograms.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupStartupPrograms.ForeColor = System.Drawing.Color.White;
-            this.groupStartupPrograms.Location = new System.Drawing.Point(185, 322);
-            this.groupStartupPrograms.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupStartupPrograms.Location = new System.Drawing.Point(139, 262);
             this.groupStartupPrograms.Name = "groupStartupPrograms";
-            this.groupStartupPrograms.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupStartupPrograms.Size = new System.Drawing.Size(419, 146);
+            this.groupStartupPrograms.Size = new System.Drawing.Size(314, 119);
             this.groupStartupPrograms.TabIndex = 6;
             this.groupStartupPrograms.TabStop = false;
             this.groupStartupPrograms.Text = "Startup Programs";
@@ -263,10 +286,9 @@ namespace Tasks
             this.btnStartupPrograms.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnStartupPrograms.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStartupPrograms.ForeColor = System.Drawing.Color.Black;
-            this.btnStartupPrograms.Location = new System.Drawing.Point(12, 23);
-            this.btnStartupPrograms.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStartupPrograms.Location = new System.Drawing.Point(9, 19);
             this.btnStartupPrograms.Name = "btnStartupPrograms";
-            this.btnStartupPrograms.Size = new System.Drawing.Size(188, 49);
+            this.btnStartupPrograms.Size = new System.Drawing.Size(141, 40);
             this.btnStartupPrograms.TabIndex = 2;
             this.btnStartupPrograms.Text = "Startup Programs";
             this.btnStartupPrograms.UseVisualStyleBackColor = true;
@@ -277,10 +299,9 @@ namespace Tasks
             this.lblStartupProgramsDesc.AutoSize = true;
             this.lblStartupProgramsDesc.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStartupProgramsDesc.ForeColor = System.Drawing.Color.White;
-            this.lblStartupProgramsDesc.Location = new System.Drawing.Point(8, 76);
-            this.lblStartupProgramsDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblStartupProgramsDesc.Location = new System.Drawing.Point(6, 62);
             this.lblStartupProgramsDesc.Name = "lblStartupProgramsDesc";
-            this.lblStartupProgramsDesc.Size = new System.Drawing.Size(375, 46);
+            this.lblStartupProgramsDesc.Size = new System.Drawing.Size(288, 34);
             this.lblStartupProgramsDesc.TabIndex = 3;
             this.lblStartupProgramsDesc.Text = "You can view, add, and remove programs that run \r\non start.";
             // 
@@ -290,11 +311,9 @@ namespace Tasks
             this.groupTaskManager.Controls.Add(this.lblTaskManagerDesc);
             this.groupTaskManager.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupTaskManager.ForeColor = System.Drawing.Color.White;
-            this.groupTaskManager.Location = new System.Drawing.Point(185, 476);
-            this.groupTaskManager.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupTaskManager.Location = new System.Drawing.Point(139, 387);
             this.groupTaskManager.Name = "groupTaskManager";
-            this.groupTaskManager.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupTaskManager.Size = new System.Drawing.Size(419, 146);
+            this.groupTaskManager.Size = new System.Drawing.Size(314, 119);
             this.groupTaskManager.TabIndex = 7;
             this.groupTaskManager.TabStop = false;
             this.groupTaskManager.Text = "Improved Task Manager";
@@ -304,10 +323,9 @@ namespace Tasks
             this.btnTaskManager.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTaskManager.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTaskManager.ForeColor = System.Drawing.Color.Black;
-            this.btnTaskManager.Location = new System.Drawing.Point(12, 23);
-            this.btnTaskManager.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTaskManager.Location = new System.Drawing.Point(9, 19);
             this.btnTaskManager.Name = "btnTaskManager";
-            this.btnTaskManager.Size = new System.Drawing.Size(188, 49);
+            this.btnTaskManager.Size = new System.Drawing.Size(141, 40);
             this.btnTaskManager.TabIndex = 2;
             this.btnTaskManager.Text = "Task Manager";
             this.btnTaskManager.UseVisualStyleBackColor = true;
@@ -318,10 +336,9 @@ namespace Tasks
             this.lblTaskManagerDesc.AutoSize = true;
             this.lblTaskManagerDesc.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTaskManagerDesc.ForeColor = System.Drawing.Color.White;
-            this.lblTaskManagerDesc.Location = new System.Drawing.Point(8, 76);
-            this.lblTaskManagerDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTaskManagerDesc.Location = new System.Drawing.Point(6, 62);
             this.lblTaskManagerDesc.Name = "lblTaskManagerDesc";
-            this.lblTaskManagerDesc.Size = new System.Drawing.Size(367, 69);
+            this.lblTaskManagerDesc.Size = new System.Drawing.Size(282, 51);
             this.lblTaskManagerDesc.TabIndex = 3;
             this.lblTaskManagerDesc.Text = "A more improved and efficient task manager. This\r\nwill include basic task manager" +
     " features and \r\nmore.\r\n";
@@ -334,11 +351,9 @@ namespace Tasks
             this.groupPCInfo.Controls.Add(this.lblComputerName);
             this.groupPCInfo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupPCInfo.ForeColor = System.Drawing.Color.White;
-            this.groupPCInfo.Location = new System.Drawing.Point(612, 15);
-            this.groupPCInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupPCInfo.Location = new System.Drawing.Point(459, 12);
             this.groupPCInfo.Name = "groupPCInfo";
-            this.groupPCInfo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupPCInfo.Size = new System.Drawing.Size(432, 146);
+            this.groupPCInfo.Size = new System.Drawing.Size(324, 119);
             this.groupPCInfo.TabIndex = 5;
             this.groupPCInfo.TabStop = false;
             this.groupPCInfo.Text = "PC Info";
@@ -347,10 +362,9 @@ namespace Tasks
             // 
             this.lblOSVer.AutoSize = true;
             this.lblOSVer.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lblOSVer.Location = new System.Drawing.Point(8, 97);
-            this.lblOSVer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblOSVer.Location = new System.Drawing.Point(6, 79);
             this.lblOSVer.Name = "lblOSVer";
-            this.lblOSVer.Size = new System.Drawing.Size(171, 25);
+            this.lblOSVer.Size = new System.Drawing.Size(131, 20);
             this.lblOSVer.TabIndex = 11;
             this.lblOSVer.Text = "OS Version: %ver%";
             // 
@@ -358,10 +372,9 @@ namespace Tasks
             // 
             this.lblRootDirectory.AutoSize = true;
             this.lblRootDirectory.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lblRootDirectory.Location = new System.Drawing.Point(8, 73);
-            this.lblRootDirectory.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRootDirectory.Location = new System.Drawing.Point(6, 59);
             this.lblRootDirectory.Name = "lblRootDirectory";
-            this.lblRootDirectory.Size = new System.Drawing.Size(178, 25);
+            this.lblRootDirectory.Size = new System.Drawing.Size(139, 20);
             this.lblRootDirectory.TabIndex = 10;
             this.lblRootDirectory.Text = "Directory: %direct%";
             // 
@@ -369,10 +382,9 @@ namespace Tasks
             // 
             this.lblUserName.AutoSize = true;
             this.lblUserName.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lblUserName.Location = new System.Drawing.Point(8, 48);
-            this.lblUserName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUserName.Location = new System.Drawing.Point(6, 39);
             this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(193, 25);
+            this.lblUserName.Size = new System.Drawing.Size(150, 20);
             this.lblUserName.TabIndex = 9;
             this.lblUserName.Text = "User Name: %name%";
             // 
@@ -380,10 +392,9 @@ namespace Tasks
             // 
             this.lblComputerName.AutoSize = true;
             this.lblComputerName.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lblComputerName.Location = new System.Drawing.Point(8, 23);
-            this.lblComputerName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblComputerName.Location = new System.Drawing.Point(6, 19);
             this.lblComputerName.Name = "lblComputerName";
-            this.lblComputerName.Size = new System.Drawing.Size(211, 25);
+            this.lblComputerName.Size = new System.Drawing.Size(165, 20);
             this.lblComputerName.TabIndex = 8;
             this.lblComputerName.Text = "Computer Name: %os%";
             // 
@@ -393,11 +404,9 @@ namespace Tasks
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(612, 169);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(459, 137);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(419, 146);
+            this.groupBox1.Size = new System.Drawing.Size(314, 119);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Site Blocker";
@@ -407,10 +416,9 @@ namespace Tasks
             this.btnSiteBlocker.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSiteBlocker.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSiteBlocker.ForeColor = System.Drawing.Color.Black;
-            this.btnSiteBlocker.Location = new System.Drawing.Point(12, 23);
-            this.btnSiteBlocker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSiteBlocker.Location = new System.Drawing.Point(9, 19);
             this.btnSiteBlocker.Name = "btnSiteBlocker";
-            this.btnSiteBlocker.Size = new System.Drawing.Size(188, 49);
+            this.btnSiteBlocker.Size = new System.Drawing.Size(141, 40);
             this.btnSiteBlocker.TabIndex = 2;
             this.btnSiteBlocker.Text = "Site Blocker";
             this.btnSiteBlocker.UseVisualStyleBackColor = true;
@@ -421,62 +429,19 @@ namespace Tasks
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(8, 76);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(6, 62);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(355, 69);
+            this.label1.Size = new System.Drawing.Size(271, 51);
             this.label1.TabIndex = 3;
             this.label1.Text = "This will block many malicious websites such as \r\nRAT connection ports, and popup" +
     " sites that may\r\ncause a nuisance in the background.";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::Tasks.Properties.Resources.GitHub_32x32;
-            this.pictureBox3.Location = new System.Drawing.Point(16, 646);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 14;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::Tasks.Properties.Resources.Twitter;
-            this.pictureBox2.Location = new System.Drawing.Point(126, 646);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Tasks.Properties.Resources.Discord;
-            this.pictureBox1.Location = new System.Drawing.Point(70, 646);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.ClientSize = new System.Drawing.Size(1076, 679);
+            this.ClientSize = new System.Drawing.Size(807, 552);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupPCInfo);
             this.Controls.Add(this.groupTaskManager);
@@ -486,12 +451,14 @@ namespace Tasks
             this.Controls.Add(this.groupCleanup);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmMain";
             this.Text = " Tasks";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupCleanup.ResumeLayout(false);
             this.groupCleanup.PerformLayout();
             this.groupBloatwareRemoval.ResumeLayout(false);
@@ -504,9 +471,6 @@ namespace Tasks
             this.groupPCInfo.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
