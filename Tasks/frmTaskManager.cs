@@ -2,9 +2,9 @@
 
 namespace Tasks
 {
-    public partial class frmChangelog : Form
+    public partial class frmTaskManager : Form
     {
-        public frmChangelog()
+        public frmTaskManager()
         {
             InitializeComponent();
         }
