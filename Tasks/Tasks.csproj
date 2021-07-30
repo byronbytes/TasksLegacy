@@ -197,8 +197,5 @@
   <ItemGroup>
     <Folder Include="Modules\" />
   </ItemGroup>
-  <ItemGroup>
-    <TypeScriptCompile Include="file1.ts" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
