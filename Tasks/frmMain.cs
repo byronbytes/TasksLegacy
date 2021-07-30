@@ -14,7 +14,7 @@ namespace Tasks
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmCleanup Cleanup = new frmCleanup(); // Initialize cleanup form.
+            FrmCleanup Cleanup = new FrmCleanup(); // Initialize cleanup form.
             Cleanup.Show(); // Show Form
         }
 
