@@ -228,7 +228,7 @@ namespace Tasks
             this.groupCleanup.Size = new System.Drawing.Size(314, 119);
             this.groupCleanup.TabIndex = 4;
             this.groupCleanup.TabStop = false;
-            this.groupCleanup.Text = "Cleaning";
+            this.groupCleanup.Text = "Cleanup";
             // 
             // groupBloatwareRemoval
             // 

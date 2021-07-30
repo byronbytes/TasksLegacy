@@ -46,18 +46,16 @@ namespace Tasks
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.checkBox2);
             this.groupBox1.Controls.Add(this.checkBox3);
             this.groupBox1.Controls.Add(this.checkBox4);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox1.Location = new System.Drawing.Point(16, 5);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(12, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(560, 172);
+            this.groupBox1.Size = new System.Drawing.Size(420, 140);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cleanup Settings";
@@ -67,10 +65,9 @@ namespace Tasks
             this.checkBox1.AutoSize = true;
             this.checkBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox1.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
-            this.checkBox1.Location = new System.Drawing.Point(8, 30);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBox1.Location = new System.Drawing.Point(6, 24);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(162, 29);
+            this.checkBox1.Size = new System.Drawing.Size(130, 23);
             this.checkBox1.TabIndex = 8;
             this.checkBox1.Text = "Clear Recycle Bin";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -80,10 +77,9 @@ namespace Tasks
             this.checkBox2.AutoSize = true;
             this.checkBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox2.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
-            this.checkBox2.Location = new System.Drawing.Point(8, 65);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBox2.Location = new System.Drawing.Point(6, 53);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(163, 29);
+            this.checkBox2.Size = new System.Drawing.Size(131, 23);
             this.checkBox2.TabIndex = 9;
             this.checkBox2.Text = "Clear Downloads";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -93,10 +89,9 @@ namespace Tasks
             this.checkBox3.AutoSize = true;
             this.checkBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox3.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
-            this.checkBox3.Location = new System.Drawing.Point(8, 101);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBox3.Location = new System.Drawing.Point(6, 82);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(179, 29);
+            this.checkBox3.Size = new System.Drawing.Size(144, 23);
             this.checkBox3.TabIndex = 10;
             this.checkBox3.Text = "Clear Temp Folders";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -106,10 +101,9 @@ namespace Tasks
             this.checkBox4.AutoSize = true;
             this.checkBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox4.Font = new System.Drawing.Font("Segoe UI Semilight", 10.25F);
-            this.checkBox4.Location = new System.Drawing.Point(8, 137);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBox4.Location = new System.Drawing.Point(6, 111);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(141, 29);
+            this.checkBox4.Size = new System.Drawing.Size(112, 23);
             this.checkBox4.TabIndex = 11;
             this.checkBox4.Text = "Clear Prefetch";
             this.checkBox4.UseVisualStyleBackColor = true;
@@ -120,10 +114,9 @@ namespace Tasks
             this.CleanupBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CleanupBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CleanupBtn.ForeColor = System.Drawing.Color.ForestGreen;
-            this.CleanupBtn.Location = new System.Drawing.Point(629, 478);
-            this.CleanupBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.CleanupBtn.Location = new System.Drawing.Point(472, 388);
             this.CleanupBtn.Name = "CleanupBtn";
-            this.CleanupBtn.Size = new System.Drawing.Size(175, 45);
+            this.CleanupBtn.Size = new System.Drawing.Size(131, 37);
             this.CleanupBtn.TabIndex = 1;
             this.CleanupBtn.Text = "Cleanup";
             this.CleanupBtn.UseVisualStyleBackColor = true;
@@ -141,13 +134,12 @@ namespace Tasks
             this.CleanupLogsLBox.ForeColor = System.Drawing.Color.White;
             this.CleanupLogsLBox.FormattingEnabled = true;
             this.CleanupLogsLBox.HorizontalScrollbar = true;
-            this.CleanupLogsLBox.ItemHeight = 21;
+            this.CleanupLogsLBox.ItemHeight = 17;
             this.CleanupLogsLBox.Items.AddRange(new object[] {
             "Cleanup Logs:"});
-            this.CleanupLogsLBox.Location = new System.Drawing.Point(16, 185);
-            this.CleanupLogsLBox.Margin = new System.Windows.Forms.Padding(4);
+            this.CleanupLogsLBox.Location = new System.Drawing.Point(12, 150);
             this.CleanupLogsLBox.Name = "CleanupLogsLBox";
-            this.CleanupLogsLBox.Size = new System.Drawing.Size(559, 338);
+            this.CleanupLogsLBox.Size = new System.Drawing.Size(420, 274);
             this.CleanupLogsLBox.TabIndex = 7;
             // 
             // taskDialog1
@@ -170,10 +162,9 @@ namespace Tasks
             this.CopyLogsBtn.Enabled = false;
             this.CopyLogsBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CopyLogsBtn.ForeColor = System.Drawing.Color.Black;
-            this.CopyLogsBtn.Location = new System.Drawing.Point(629, 425);
-            this.CopyLogsBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.CopyLogsBtn.Location = new System.Drawing.Point(472, 345);
             this.CopyLogsBtn.Name = "CopyLogsBtn";
-            this.CopyLogsBtn.Size = new System.Drawing.Size(175, 45);
+            this.CopyLogsBtn.Size = new System.Drawing.Size(131, 37);
             this.CopyLogsBtn.TabIndex = 8;
             this.CopyLogsBtn.Text = "Copy Logs";
             this.CopyLogsBtn.UseVisualStyleBackColor = true;
@@ -181,16 +172,15 @@ namespace Tasks
             // 
             // FrmCleanup
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.ClientSize = new System.Drawing.Size(819, 551);
+            this.ClientSize = new System.Drawing.Size(614, 448);
             this.Controls.Add(this.CopyLogsBtn);
             this.Controls.Add(this.CleanupLogsLBox);
             this.Controls.Add(this.CleanupBtn);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmCleanup";
             this.Text = "Cleanup";
             this.groupBox1.ResumeLayout(false);

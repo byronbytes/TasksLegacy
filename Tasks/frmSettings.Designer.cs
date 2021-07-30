@@ -65,6 +65,7 @@ namespace Tasks
             this.button2.TabIndex = 5;
             this.button2.Text = "Light Theme";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 

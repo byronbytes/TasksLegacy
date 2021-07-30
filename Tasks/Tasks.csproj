@@ -172,7 +172,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Plans\Plans.txt" />
+    <Content Include="Plans\Future Projections.txt" />
     <None Include="Resources\Tasks 32x32.png" />
     <None Include="Resources\Tasks 64x64.png" />
     <None Include="Resources\Tasks 64x64 FIXED.png" />
@@ -180,6 +180,7 @@
     <None Include="Resources\Discord.png" />
     <None Include="Resources\Twitter.png" />
     <None Include="Resources\GitHub 32x32.png" />
+    <Content Include="Plans\Notes.txt" />
     <Content Include="Tasks64x64.ico" />
   </ItemGroup>
   <ItemGroup>

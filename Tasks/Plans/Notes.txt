@@ -1,0 +1,4 @@
+﻿Light Theme Palette
+
+BackColor = 235, 230, 235
+Text = Black
