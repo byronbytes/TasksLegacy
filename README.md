@@ -9,12 +9,14 @@ Tasks helps your computer run faster by allowing you to clean trash, remove bloa
 - Allow and disallow processes that run on start.
 - An advanced task manager that gives you more information than the old Windows `taskmgr`.
 - Remove bloatware from your computer on a click of a button.
+- - Blacklist sites that are known to be malicious or point to malicious websites.
+- Check your PC Info with a glance.
 - Discord RPC included!
 
 # 🦺Prerequisites
 
 To be able to run Tasks, you will need the following:
-- [Microsoft .NET Framework 3.0](https://www.microsoft.com/en-us/download/details.aspx?id=3005) or higher
+- [Microsoft .NET Framework 3.0](https://www.microsoft.com/en-us/download/details.aspx?id=3005) or higher.
 
 
 # 🎁Setup
@@ -36,5 +38,5 @@ These screenshots were taken on Version 1.4.0, later versions may look different
 ![image](https://user-images.githubusercontent.com/53088136/127242110-6a258622-7a42-4d68-bbdd-32ef33243b1c.png)
 ![image](https://user-images.githubusercontent.com/53088136/127242208-e85fcc56-a456-4022-836e-69f028ef0343.png)
 
-(c) LiteTools 2021
+(c) LiteTools Foundation 2021
 
