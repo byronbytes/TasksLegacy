@@ -316,7 +316,7 @@ namespace Tasks
             this.groupTaskManager.Size = new System.Drawing.Size(314, 119);
             this.groupTaskManager.TabIndex = 7;
             this.groupTaskManager.TabStop = false;
-            this.groupTaskManager.Text = "Improved Task Manager";
+            this.groupTaskManager.Text = "Task Manager";
             // 
             // btnTaskManager
             // 
