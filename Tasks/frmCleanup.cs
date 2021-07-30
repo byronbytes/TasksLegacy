@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows;
 namespace Tasks
 {
     public partial class frmCleanup : Form
@@ -137,14 +131,14 @@ namespace Tasks
                 }
             }
         }
-   
+
 
         private void button2_Click(object sender, EventArgs e)
         {
             listBox1.Items.Add("Debug log copied to clipboard.");
-          Clipboard.SetText(string.Join("\n", listBox1.Items.Cast<string>()));
+            Clipboard.SetText(string.Join("\n", listBox1.Items.Cast<string>()));
         }
     }
-    }
-    
+}
+
 
