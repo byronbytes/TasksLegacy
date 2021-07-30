@@ -179,6 +179,7 @@
     <None Include="Resources\Tasks 128x128.png" />
     <None Include="Resources\Discord.png" />
     <None Include="Resources\Twitter.png" />
+    <None Include="Resources\GitHub 32x32.png" />
     <Content Include="Tasks64x64.ico" />
   </ItemGroup>
   <ItemGroup>
