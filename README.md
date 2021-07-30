@@ -9,7 +9,7 @@ Tasks helps your computer run faster by allowing you to clean trash, remove bloa
 - Allow and disallow processes that run on start.
 - An advanced task manager that gives you more information than the old Windows `taskmgr`.
 - Remove bloatware from your computer on a click of a button.
-- - Blacklist sites that are known to be malicious or point to malicious websites.
+- Blacklist sites that are known to be malicious or point to malicious websites.
 - Check your PC Info with a glance.
 - Discord RPC included!
 
