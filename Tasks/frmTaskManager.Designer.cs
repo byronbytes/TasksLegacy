@@ -29,11 +29,15 @@ namespace Tasks
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTaskManager));
             this.label1 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.runAsAdminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -65,6 +69,7 @@ namespace Tasks
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI Semilight", 13.25F);
+            this.button1.ForeColor = System.Drawing.Color.Red;
             this.button1.Location = new System.Drawing.Point(371, 542);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(139, 35);
@@ -75,6 +80,7 @@ namespace Tasks
             // 
             // button2
             // 
+            this.button2.ContextMenuStrip = this.contextMenuStrip1;
             this.button2.Font = new System.Drawing.Font("Segoe UI Semilight", 13.25F);
             this.button2.Location = new System.Drawing.Point(516, 542);
             this.button2.Name = "button2";
@@ -82,6 +88,23 @@ namespace Tasks
             this.button2.TabIndex = 3;
             this.button2.Text = "Run New Task";
             this.button2.UseVisualStyleBackColor = true;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.runAsAdminToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(149, 26);
+            // 
+            // runAsAdminToolStripMenuItem
+            // 
+            this.runAsAdminToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.runAsAdminToolStripMenuItem.Image = global::Tasks.Properties.Resources.UAC;
+            this.runAsAdminToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.White;
+            this.runAsAdminToolStripMenuItem.Name = "runAsAdminToolStripMenuItem";
+            this.runAsAdminToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.runAsAdminToolStripMenuItem.Text = "Run as Admin";
             // 
             // frmTaskManager
             // 
@@ -97,6 +120,7 @@ namespace Tasks
             this.Name = "frmTaskManager";
             this.Text = "Task Manager";
             this.Load += new System.EventHandler(this.frmTaskManager_Load);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -107,5 +131,7 @@ namespace Tasks
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem runAsAdminToolStripMenuItem;
     }
 }

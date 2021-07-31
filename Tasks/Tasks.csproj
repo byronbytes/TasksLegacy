@@ -190,6 +190,7 @@
     <None Include="Resources\Twitter.png" />
     <None Include="Resources\GitHub 32x32.png" />
     <Content Include="Plans\Notes.txt" />
+    <None Include="Resources\UAC.png" />
     <Content Include="Tasks64x64.ico" />
   </ItemGroup>
   <ItemGroup>
