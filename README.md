@@ -7,7 +7,7 @@ Tasks helps your computer run faster by allowing you to clean trash, remove bloa
 
 - Cleanup Folders such as Prefetch, Downloads, Temp and empty your Recycle Bin easily.
 - Allow and disallow processes that run on start.
-- An advanced task manager that gives you more information than the old Windows `taskmgr`.
+- An advanced task manager that gives you more information than the old Windows `taskmgr`. (Supports running tasks as admin)
 - Remove bloatware from your computer on a click of a button.
 - Blacklist sites that are known to be malicious or point to malicious websites.
 - Check your PC Info with a glance.
@@ -42,5 +42,8 @@ These screenshots were taken on Version 1.4.0, later versions may look different
 ![image](https://user-images.githubusercontent.com/53088136/127242110-6a258622-7a42-4d68-bbdd-32ef33243b1c.png)
 ![image](https://user-images.githubusercontent.com/53088136/127242208-e85fcc56-a456-4022-836e-69f028ef0343.png)
 
-(c) LiteTools Foundation 2021
+
+# 📃Info
+
+This program was created by LiteTools, a foundation that aims towards making simplistic tools for computers. The founder of LiteTools created the application originally on the personal profile, but later will be moving it to LiteTools.
 
