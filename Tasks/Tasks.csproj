@@ -124,6 +124,12 @@
     <Compile Include="frmTaskManager.Designer.cs">
       <DependentUpon>frmTaskManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="Other Forms\frmTMRuncs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other Forms\frmTMRuncs.Designer.cs">
+      <DependentUpon>frmTMRuncs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmMain.resx">
@@ -146,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTaskManager.resx">
       <DependentUpon>frmTaskManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other Forms\frmTMRuncs.resx">
+      <DependentUpon>frmTMRuncs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
