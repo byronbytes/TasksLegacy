@@ -34,7 +34,7 @@ namespace Tasks
             }
             catch(Exception ex )
             {
-
+                MessageBox.Show(ex.Message);
             }
         }
 
