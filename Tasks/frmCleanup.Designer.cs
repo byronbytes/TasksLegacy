@@ -71,6 +71,7 @@ namespace Tasks
             this.checkBox1.TabIndex = 8;
             this.checkBox1.Text = "Clear Recycle Bin";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox2
             // 

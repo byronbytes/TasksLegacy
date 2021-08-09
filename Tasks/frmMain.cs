@@ -31,11 +31,7 @@ namespace Tasks
             Process.Start("https://github.com/byronbytes/Tasks/issues/new?assignees=byronbytes&labels=bug&template=bug-report.md&title=");
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            frmChangelog Changelog = new frmChangelog(); // Initialize cleanup form.
-            Changelog.Show(); // Show Form
-        }
+
 
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -49,10 +45,7 @@ namespace Tasks
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            lblComputerName.Text = "PC Name: " + Environment.MachineName;
-            lblUserName.Text = "User Name: " + Environment.UserName;
-            lblRootDirectory.Text = "Root Directory: " + Environment.SystemDirectory;
-            lblOSVer.Text = "OS Version: " + Environment.Version;
+
 
         }
 

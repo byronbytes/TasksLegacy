@@ -37,7 +37,6 @@ namespace Tasks
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSettings = new System.Windows.Forms.Button();
             this.lblVersion = new System.Windows.Forms.Label();
-            this.btnChangelog = new System.Windows.Forms.Button();
             this.lblFoundBug = new System.Windows.Forms.LinkLabel();
             this.btnCleanup = new System.Windows.Forms.Button();
             this.lblCleanupDesc = new System.Windows.Forms.Label();
@@ -51,14 +50,6 @@ namespace Tasks
             this.groupTaskManager = new System.Windows.Forms.GroupBox();
             this.btnTaskManager = new System.Windows.Forms.Button();
             this.lblTaskManagerDesc = new System.Windows.Forms.Label();
-            this.groupPCInfo = new System.Windows.Forms.GroupBox();
-            this.lblOSVer = new System.Windows.Forms.Label();
-            this.lblRootDirectory = new System.Windows.Forms.Label();
-            this.lblUserName = new System.Windows.Forms.Label();
-            this.lblComputerName = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnSiteBlocker = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -67,8 +58,6 @@ namespace Tasks
             this.groupBloatwareRemoval.SuspendLayout();
             this.groupStartupPrograms.SuspendLayout();
             this.groupTaskManager.SuspendLayout();
-            this.groupPCInfo.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -92,7 +81,6 @@ namespace Tasks
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnSettings);
             this.panel1.Controls.Add(this.lblVersion);
-            this.panel1.Controls.Add(this.btnChangelog);
             this.panel1.Controls.Add(this.lblTitle);
             this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel1.Location = new System.Drawing.Point(0, -4);
@@ -160,23 +148,9 @@ namespace Tasks
             this.lblVersion.ForeColor = System.Drawing.Color.Gray;
             this.lblVersion.Location = new System.Drawing.Point(70, 0);
             this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(66, 30);
+            this.lblVersion.Size = new System.Drawing.Size(64, 30);
             this.lblVersion.TabIndex = 10;
-            this.lblVersion.Text = "v2.0.0";
-            // 
-            // btnChangelog
-            // 
-            this.btnChangelog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnChangelog.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnChangelog.Font = new System.Drawing.Font("Segoe UI Semilight", 10.75F);
-            this.btnChangelog.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChangelog.Location = new System.Drawing.Point(-1, 446);
-            this.btnChangelog.Name = "btnChangelog";
-            this.btnChangelog.Size = new System.Drawing.Size(134, 31);
-            this.btnChangelog.TabIndex = 9;
-            this.btnChangelog.Text = "Changelog";
-            this.btnChangelog.UseVisualStyleBackColor = true;
-            this.btnChangelog.Click += new System.EventHandler(this.button4_Click);
+            this.lblVersion.Text = "v1.4.0";
             // 
             // lblFoundBug
             // 
@@ -184,7 +158,7 @@ namespace Tasks
             this.lblFoundBug.AutoSize = true;
             this.lblFoundBug.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFoundBug.LinkColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblFoundBug.Location = new System.Drawing.Point(689, 521);
+            this.lblFoundBug.Location = new System.Drawing.Point(545, 527);
             this.lblFoundBug.Name = "lblFoundBug";
             this.lblFoundBug.Size = new System.Drawing.Size(100, 20);
             this.lblFoundBug.TabIndex = 11;
@@ -343,107 +317,12 @@ namespace Tasks
             this.lblTaskManagerDesc.Text = "A more improved and efficient task manager. This\r\nwill include basic task manager" +
     " features and \r\nmore.\r\n";
             // 
-            // groupPCInfo
-            // 
-            this.groupPCInfo.Controls.Add(this.lblOSVer);
-            this.groupPCInfo.Controls.Add(this.lblRootDirectory);
-            this.groupPCInfo.Controls.Add(this.lblUserName);
-            this.groupPCInfo.Controls.Add(this.lblComputerName);
-            this.groupPCInfo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupPCInfo.ForeColor = System.Drawing.Color.White;
-            this.groupPCInfo.Location = new System.Drawing.Point(459, 12);
-            this.groupPCInfo.Name = "groupPCInfo";
-            this.groupPCInfo.Size = new System.Drawing.Size(324, 119);
-            this.groupPCInfo.TabIndex = 5;
-            this.groupPCInfo.TabStop = false;
-            this.groupPCInfo.Text = "PC Info";
-            // 
-            // lblOSVer
-            // 
-            this.lblOSVer.AutoSize = true;
-            this.lblOSVer.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lblOSVer.Location = new System.Drawing.Point(6, 79);
-            this.lblOSVer.Name = "lblOSVer";
-            this.lblOSVer.Size = new System.Drawing.Size(131, 20);
-            this.lblOSVer.TabIndex = 11;
-            this.lblOSVer.Text = "OS Version: %ver%";
-            // 
-            // lblRootDirectory
-            // 
-            this.lblRootDirectory.AutoSize = true;
-            this.lblRootDirectory.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lblRootDirectory.Location = new System.Drawing.Point(6, 59);
-            this.lblRootDirectory.Name = "lblRootDirectory";
-            this.lblRootDirectory.Size = new System.Drawing.Size(139, 20);
-            this.lblRootDirectory.TabIndex = 10;
-            this.lblRootDirectory.Text = "Directory: %direct%";
-            // 
-            // lblUserName
-            // 
-            this.lblUserName.AutoSize = true;
-            this.lblUserName.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lblUserName.Location = new System.Drawing.Point(6, 39);
-            this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(150, 20);
-            this.lblUserName.TabIndex = 9;
-            this.lblUserName.Text = "User Name: %name%";
-            // 
-            // lblComputerName
-            // 
-            this.lblComputerName.AutoSize = true;
-            this.lblComputerName.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lblComputerName.Location = new System.Drawing.Point(6, 19);
-            this.lblComputerName.Name = "lblComputerName";
-            this.lblComputerName.Size = new System.Drawing.Size(165, 20);
-            this.lblComputerName.TabIndex = 8;
-            this.lblComputerName.Text = "Computer Name: %os%";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.btnSiteBlocker);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(459, 137);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(314, 119);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Site Blocker";
-            // 
-            // btnSiteBlocker
-            // 
-            this.btnSiteBlocker.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSiteBlocker.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiteBlocker.ForeColor = System.Drawing.Color.Black;
-            this.btnSiteBlocker.Location = new System.Drawing.Point(9, 19);
-            this.btnSiteBlocker.Name = "btnSiteBlocker";
-            this.btnSiteBlocker.Size = new System.Drawing.Size(141, 40);
-            this.btnSiteBlocker.TabIndex = 2;
-            this.btnSiteBlocker.Text = "Site Blocker";
-            this.btnSiteBlocker.UseVisualStyleBackColor = true;
-            this.btnSiteBlocker.Click += new System.EventHandler(this.btnSiteBlocker_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(6, 62);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(271, 51);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "This will block many malicious websites such as \r\nRAT connection ports, and popup" +
-    " sites that may\r\ncause a nuisance in the background.";
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.ClientSize = new System.Drawing.Size(807, 552);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.groupPCInfo);
+            this.ClientSize = new System.Drawing.Size(657, 552);
             this.Controls.Add(this.groupTaskManager);
             this.Controls.Add(this.lblFoundBug);
             this.Controls.Add(this.groupStartupPrograms);
@@ -467,10 +346,6 @@ namespace Tasks
             this.groupStartupPrograms.PerformLayout();
             this.groupTaskManager.ResumeLayout(false);
             this.groupTaskManager.PerformLayout();
-            this.groupPCInfo.ResumeLayout(false);
-            this.groupPCInfo.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -489,23 +364,14 @@ namespace Tasks
         private System.Windows.Forms.GroupBox groupStartupPrograms;
         private System.Windows.Forms.Button btnStartupPrograms;
         private System.Windows.Forms.Label lblStartupProgramsDesc;
-        private System.Windows.Forms.Button btnChangelog;
         private System.Windows.Forms.GroupBox groupTaskManager;
         private System.Windows.Forms.Button btnTaskManager;
         private System.Windows.Forms.Label lblTaskManagerDesc;
         private System.Windows.Forms.LinkLabel lblFoundBug;
         private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Label lblVersion;
-        private System.Windows.Forms.GroupBox groupPCInfo;
-        private System.Windows.Forms.Label lblComputerName;
-        private System.Windows.Forms.Label lblUserName;
-        private System.Windows.Forms.Label lblRootDirectory;
-        private System.Windows.Forms.Label lblOSVer;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnSiteBlocker;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.Dynamic;
 using System.Management;
 using System.Windows.Forms;
@@ -124,8 +125,8 @@ namespace Tasks
                         System.Drawing.Icon.ExtractAssociatedIcon(process.MainModule.FileName).ToBitmap()
                     );
                 }
-                catch { 
-                
+                catch {
+               
                 }
 
                 // Create a new Item to add into the list view that expects the row of information as first argument
