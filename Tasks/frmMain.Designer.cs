@@ -35,7 +35,6 @@ namespace Tasks
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnSettings = new System.Windows.Forms.Button();
             this.lblVersion = new System.Windows.Forms.Label();
             this.lblFoundBug = new System.Windows.Forms.LinkLabel();
             this.btnCleanup = new System.Windows.Forms.Button();
@@ -79,7 +78,6 @@ namespace Tasks
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.btnSettings);
             this.panel1.Controls.Add(this.lblVersion);
             this.panel1.Controls.Add(this.lblTitle);
             this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -127,20 +125,6 @@ namespace Tasks
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // btnSettings
-            // 
-            this.btnSettings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnSettings.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSettings.Font = new System.Drawing.Font("Segoe UI Semilight", 10.75F);
-            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(0, 488);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(133, 31);
-            this.btnSettings.TabIndex = 12;
-            this.btnSettings.Text = "Settings";
-            this.btnSettings.UseVisualStyleBackColor = true;
-            this.btnSettings.Click += new System.EventHandler(this.button6_Click);
-            // 
             // lblVersion
             // 
             this.lblVersion.AutoSize = true;
@@ -148,9 +132,9 @@ namespace Tasks
             this.lblVersion.ForeColor = System.Drawing.Color.Gray;
             this.lblVersion.Location = new System.Drawing.Point(70, 0);
             this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(64, 30);
+            this.lblVersion.Size = new System.Drawing.Size(61, 30);
             this.lblVersion.TabIndex = 10;
-            this.lblVersion.Text = "v1.4.0";
+            this.lblVersion.Text = "v1.4.1";
             // 
             // lblFoundBug
             // 
@@ -160,10 +144,10 @@ namespace Tasks
             this.lblFoundBug.LinkColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblFoundBug.Location = new System.Drawing.Point(545, 527);
             this.lblFoundBug.Name = "lblFoundBug";
-            this.lblFoundBug.Size = new System.Drawing.Size(100, 20);
+            this.lblFoundBug.Size = new System.Drawing.Size(99, 20);
             this.lblFoundBug.TabIndex = 11;
             this.lblFoundBug.TabStop = true;
-            this.lblFoundBug.Text = "Found A Bug?";
+            this.lblFoundBug.Text = "Found a bug?";
             this.lblFoundBug.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // btnCleanup
@@ -368,7 +352,6 @@ namespace Tasks
         private System.Windows.Forms.Button btnTaskManager;
         private System.Windows.Forms.Label lblTaskManagerDesc;
         private System.Windows.Forms.LinkLabel lblFoundBug;
-        private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
