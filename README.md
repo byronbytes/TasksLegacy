@@ -1,4 +1,4 @@
-# Please check out https://github.com/LiteTools/Tasks for an updated and maintaned version!!! !!! !!! 
+# 🔔 🔔 🔔Please check out https://github.com/LiteTools/Tasks for an updated and maintaned version!!! !!! !!!  🔔 🔔 🔔
 
 ## Notice: This version of Tasks was written with an old verison of C# and .NET Framework, we have moved to a more stable system.
 
@@ -46,8 +46,4 @@ These screenshots were taken on Version 1.4.0, later versions may look different
 ![image](https://user-images.githubusercontent.com/53088136/127242110-6a258622-7a42-4d68-bbdd-32ef33243b1c.png)
 ![image](https://user-images.githubusercontent.com/53088136/127242208-e85fcc56-a456-4022-836e-69f028ef0343.png)
 
-
-# 📃Info
-
-This program was created by LiteTools, a foundation that aims towards making simplistic tools for computers. The founder of LiteTools created the application originally on the personal profile, but later will be moving it to LiteTools.
 
