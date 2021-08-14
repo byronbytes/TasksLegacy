@@ -1,6 +1,8 @@
+# Please check out https://github.com/LiteTools/Tasks for an updated and maintaned version!!! !!! !!! 
+
 ## Notice: This version of Tasks was written with an old verison of C# and .NET Framework, we have moved to a more stable system.
 
-## Please check out https://github.com/LiteTools/Tasks for an updated and maintaned version.
+
 
 # 😎Tasks Legacy
 
